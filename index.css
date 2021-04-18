@@ -1,0 +1,373 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F7F4EE;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* a:hover {
+    text-decoration: none;
+        } */
+    li {
+      list-style-type: none;
+    }
+
+
+    .s_index_blueBtn:hover {
+      background-color: #89A7C2;
+      color: #ffffff;
+      border: 0;
+    }
+
+    .s_index_forums_index_dogArea {
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+    @media (min-width:300px) {
+      .s_index_subtitle {
+        color: #89A7C2;
+        text-align: center;
+      }
+
+      .s_index_subtitleCh::before {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background: #89A7C2;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+      }
+
+      .s_index_subtitleCh {
+        font-size: 24px;
+        position: relative;
+      }
+
+      .s_index_subtitleEn {
+        text-indent: 105px;
+        font-size: 12px;
+        position: relative;
+      }
+
+      .s_index_subtitleEn::after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background: #89A7C2;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+      }
+
+      .s_index_mainActivity_choiceArea_PC {
+        display: none;
+      }
+
+      .s_index_mainActivity_choiceArea_ph {
+        width: 360px;
+        margin: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
+
+      .s_index_choiceArea_ph {
+        margin: 15px 10px;
+      }
+
+      .s_index_higher {
+        margin-top: -40px;
+      }
+
+      .s_index_lower {
+        margin-top: 70px;
+      }
+
+      .s_index_choiceAreaImg_ph {
+        /* height:155px; */
+        width: 155px;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+      }
+
+      .s_index_choice_ph {
+        font-size: 14px;
+        color: #707070;
+        background-color: #F9DD83;
+        border-radius: 0 0 10px 10px;
+        height: 50px;
+        width: 139px;
+        padding: 10px 8px 0;
+        margin: -10px 0;
+      }
+
+
+
+      .s_index_btnGroup {
+        text-align: center;
+        margin: 35px 0 90px;
+      }
+
+      .s_index_blueBtn {
+        height: 35px;
+        width: 135px;
+        border: 0;
+        background-color: #ffffff;
+        color: #89A7C2;
+        border-radius: 43px;
+        font-size: 14px;
+      }
+
+      .s_index_forums_index_dogArea {
+        flex-direction: column;
+        margin: 0 0 195px;
+      }
+
+      .s_index_forums_index_dog {
+        margin: 48px auto 0;
+      }
+
+      .s_index_forums_index_dog_img {
+        width: 300px;
+        border-radius: 20px;
+      }
+
+      .s_index_forums_index_dog_para {
+        width: 300px;
+        margin: 10px auto;
+        color: #707070;
+        font-size: 14px;
+      }
+
+/* ------------捐贈--------- */
+      .s_index_donation_imgIntro {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .s_index_donation_img {
+        max-width: 100%;
+        height: auto;
+        /* height: 240px; */
+        /* width:100%;  */
+      }
+
+      .s_index_donation_Intro {
+        /* width: 375px; */
+        max-width: 100%;
+        height: auto;
+        background-color: #70707093;
+        color: #F7F4EE;
+      }
+
+      .s_index_donation_IntroAll {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .s_index_donation_Intro_title {
+        font-size: 35px;
+        margin: 20px 0 0 20px;
+      }
+
+      .s_index_donation_Intro_para {
+        width: 224px;
+        font-size: 18px;
+        margin: 20px 0 0 24px;
+      }
+
+      .s_index_donation_Intro_btn_PC {
+        display: none;
+      }
+
+      .s_index_donation_Intro_btn_ph {
+        display: inline-block;
+        width: 142px;
+        height: 35px;
+        border-radius: 17px;
+        background-color: #ffffff;
+        font-size: 16px;
+        border: 0;
+        color: #707070;
+        margin: 10px 0 26px 115px;
+      }
+    }
+
+    @media (min-width: 500px) {
+      .s_index_subtitle {
+        color: #89A7C2;
+        text-align: center;
+      }
+
+      .s_index_subtitleCh::before {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background: #89A7C2;
+        position: absolute;
+        top: 50%;
+        left: 630px;
+      }
+
+      .s_index_subtitleCh {
+        font-size: 70px;
+        position: relative;
+      }
+
+      .s_index_subtitleEn {
+        text-indent: 300px;
+        font-size: 40px;
+        position: relative;
+      }
+
+      .s_index_subtitleEn::after {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background: #89A7C2;
+        position: absolute;
+        top: 50%;
+        right: 550px;
+      }
+
+      .s_index_mainActivity_choiceArea_ph {
+        display: none;
+      }
+
+      .s_index_mainActivity_choiceArea_PC {
+        display: block;
+
+      }
+
+      .s_index_choiceAreaImg_PC {
+        height: 640px;
+        width: 1280px;
+        padding: 100px 0;
+        z-index: -10;
+        position: relative;
+      }
+
+      .s_index_choiceArea_choice_PC {
+        margin: 240px 0 0;
+        position: absolute;
+        right: 10px;
+        top: 160px;
+      }
+
+      .s_index_choice_PC:hover {
+        background-color: #89A7C2;
+      }
+
+      .s_index_choice_PC {
+        font-size: 30px;
+        line-height: 97px;
+        color: #707070;
+        text-indent: 60px;
+        background-color: #F9DD83;
+        border-radius: 36px;
+        height: 97px;
+        width: 765px;
+        z-index: 10;
+        margin: 16px 0;
+      }
+
+
+
+
+
+
+
+      .s_index_btnGroup {
+        text-align: center;
+        margin: 75px 0 115px;
+      }
+
+      .s_index_blueBtn {
+        height: 66px;
+        width: 287px;
+        border: 0;
+        background-color: #ffffff;
+        color: #89A7C2;
+        border-radius: 36px;
+        font-size: 30px;
+      }
+
+      .s_index_forums_index_dogArea {
+        flex-direction: row;
+      }
+
+      .s_index_forums_index_dog {
+        margin: 0 20px;
+
+      }
+
+      .s_index_forums_index_dog_img {
+        width: 537px;
+        border-radius: 60px;
+      }
+
+      .s_index_forums_index_dog_para {
+        width: 380px;
+        margin: 35px auto 325px;
+        color: #707070;
+        font-size: 18px;
+      }
+
+/* ---------------捐贈----------------- */
+      .s_index_donation_img {
+        height: 834px;
+        width: 1920px;
+        margin: 0 0 40px;
+        position: absolute;
+      }
+
+      .s_index_donation_Intro {
+        width: 580px;
+        height: 417px;
+        background-color: #70707093;
+        position: relative;
+        border-radius: 42px;
+        top: 76px;
+        left: 36px;
+        color: #F7F4EE;
+      }
+.s_index_donation_IntroAll {
+        display:block;
+      }
+      .s_index_donation_Intro_title {
+        font-size: 45px;
+        margin: 30px 0 45px 64px;
+      }
+
+      .s_index_donation_Intro_para {
+        width: 451px;
+        margin: 0 64px 60px  ;
+        font-size: 18px;
+      }
+
+      .s_index_donation_Intro_btn_PC {
+        display: inline-block;
+        width: 151px;
+        height: 34px;
+        border-radius: 17px;
+        background-color: #ffffff;
+        font-size: 18px;
+        margin: 0 0 0 400px;
+        border: 0;
+      }
+
+      .s_index_donation_Intro_btn_ph {
+        display: none;
+      }
+
+    }
+ 
