@@ -31,7 +31,7 @@
 
 
     @media (min-width:300px) {
-      .s_index_subtitle {
+      /* .s_index_subtitle {
         color: #89A7C2;
         text-align: center;
       }
@@ -55,9 +55,9 @@
         text-indent: 105px;
         font-size: 12px;
         position: relative;
-      }
+      } */
 
-      .s_index_subtitleEn::after {
+      /* .s_index_subtitleEn::after {
         content: '';
         width: 50px;
         height: 2px;
@@ -65,7 +65,7 @@
         position: absolute;
         top: 50%;
         right: 30px;
-      }
+      } */
 
       .s_index_mainActivity_choiceArea_PC {
         display: none;
@@ -203,42 +203,72 @@
     }
 
     @media (min-width: 500px) {
+
+      /*---------標題 ----------*/
       .s_index_subtitle {
         color: #89A7C2;
-        text-align: center;
+        /* text-align:right; */
+        display: flex;
+        /* display: inline-flex;    */
+        flex-direction: column; 
+        align-items: center;
+        /* justify-content: flex-end; */
       }
+.s_index_subtitleChLeftLine{
+        width: 80px;
+        height: 3px;
+        background: #89A7C2;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right:10px ;
 
-      .s_index_subtitleCh::before {
+}
+.s_index_subtitleChRightLine{
+        width: 80px;
+        height: 3px;
+        background: #89A7C2;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left:10px ;
+
+}
+      /* .s_index_subtitleCh::before {
         content: '';
-        width: 100px;
+        width: 80px;
         height: 3px;
         background: #89A7C2;
         position: absolute;
         top: 50%;
+margin-left:660px ;
         left: 630px;
-      }
+      }  */
 
       .s_index_subtitleCh {
-        font-size: 70px;
-        position: relative;
+        font-size: 50px;      
+        /* position: relative; */
       }
 
       .s_index_subtitleEn {
-        text-indent: 300px;
-        font-size: 40px;
-        position: relative;
+        /* text-indent: 200px; */
+        font-size: 26px;
+        margin-left: 19%;          
+        /* position: relative; */
       }
 
-      .s_index_subtitleEn::after {
+      /* .s_index_subtitleEn::after {
         content: '';
-        width: 100px;
+        width: 80px;
         height: 3px;
         background: #89A7C2;
         position: absolute;
         top: 50%;
+        margin-right: 37%;
+        margin-right: 680px;
         right: 550px;
-      }
+      } */
+/*----------- 標題結尾---------- */
 
+/* -------------主打活動---------- */
       .s_index_mainActivity_choiceArea_ph {
         display: none;
       }
@@ -285,7 +315,7 @@
 
 
 
-
+/* ---------------專欄-------------- */
       .s_index_btnGroup {
         text-align: center;
         margin: 75px 0 115px;
