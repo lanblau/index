@@ -181,7 +181,7 @@
 
       .s_index_donation_Intro_para {
         width: 224px;
-        font-size: 18px;
+        font-size: 16px;
         margin: 20px 0 0 24px;
       }
 
@@ -198,7 +198,7 @@
         font-size: 16px;
         border: 0;
         color: #707070;
-        margin: 10px 0 26px 115px;
+        margin: 10px 0 26px 130px;
       }
     }
 
@@ -289,8 +289,8 @@ margin-left:660px ;
       .s_index_choiceArea_choice_PC {
         margin: 240px 0 0;
         position: absolute;
-        right: 10px;
-        top: 160px;
+        right: 90px;
+        top: 180px;
       }
 
       .s_index_choice_PC:hover {
@@ -298,14 +298,14 @@ margin-left:660px ;
       }
 
       .s_index_choice_PC {
-        font-size: 30px;
-        line-height: 97px;
+        font-size: 22px;
+        line-height: 80px;
         color: #707070;
         text-indent: 60px;
         background-color: #F9DD83;
         border-radius: 36px;
-        height: 97px;
-        width: 765px;
+        height: 80px;
+        width: 600px;
         z-index: 10;
         margin: 16px 0;
       }
@@ -349,39 +349,46 @@ margin-left:660px ;
         width: 380px;
         margin: 35px auto 325px;
         color: #707070;
-        font-size: 18px;
+        font-size: 16px;
       }
 
 /* ---------------捐贈----------------- */
-      .s_index_donation_img {
-        height: 834px;
-        width: 1920px;
-        margin: 0 0 40px;
-        position: absolute;
+.s_index_donation_imgIntro{
+  /* margin: 0 auto; */
+  /* border: 1px red solid; */
+  width: 100%;
+  /* position: absolute; */
+}      
+.s_index_donation_img {
+        /* height: 600px; */
+        width: 1500px;
+        margin: 0 auto;
+        /* position: absolute; */
+        /* background-attachment: fixed; */
       }
 
       .s_index_donation_Intro {
-        width: 580px;
-        height: 417px;
+        width: 500px;
+        height: 350px;
         background-color: #70707093;
         position: relative;
-        border-radius: 42px;
-        top: 76px;
-        left: 36px;
+        border-radius: 40px;
+        top: -600px;
+        left: 250px;
         color: #F7F4EE;
       }
-.s_index_donation_IntroAll {
+      .s_index_donation_IntroAll {
         display:block;
       }
       .s_index_donation_Intro_title {
         font-size: 45px;
-        margin: 30px 0 45px 64px;
+        margin: 30px 0 10px 45px;
       }
 
       .s_index_donation_Intro_para {
-        width: 451px;
-        margin: 0 64px 60px  ;
-        font-size: 18px;
+        width: 400px;
+        margin: 0 auto;
+        font-size: 16px;
       }
 
       .s_index_donation_Intro_btn_PC {
@@ -390,8 +397,8 @@ margin-left:660px ;
         height: 34px;
         border-radius: 17px;
         background-color: #ffffff;
-        font-size: 18px;
-        margin: 0 0 0 400px;
+        font-size: 16px;
+        margin: 30px 0 0 300px;
         border: 0;
       }
 
