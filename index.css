@@ -17,13 +17,13 @@
     }
 
 
-    .s_index_blueBtn:hover {
+    .s_index_columnBlueBtn:hover {
       background-color: #89A7C2;
       color: #ffffff;
       border: 0;
     }
 
-    .s_index_forums_index_dogArea {
+    .s_index_column_index_dogArea {
       display: flex;
       justify-content: center;
     }
@@ -67,11 +67,11 @@
         right: 30px;
       } */
 
-      .s_index_mainActivity_choiceArea_PC {
+      .s_index_MonthlyEvents_choiceArea_PC {
         display: none;
       }
 
-      .s_index_mainActivity_choiceArea_ph {
+      .s_index_MonthlyEvents_choiceArea_ph {
         width: 360px;
         margin: 80px 0;
         display: flex;
@@ -110,14 +110,14 @@
         margin: -10px 0;
       }
 
+/*-----------專欄------------*/
 
-
-      .s_index_btnGroup {
+      .s_index_columnBtnGroup {
         text-align: center;
-        margin: 35px 0 90px;
+        /* margin: 35px 0 90px; */
       }
 
-      .s_index_blueBtn {
+      .s_index_columnBlueBtn {
         height: 35px;
         width: 135px;
         border: 0;
@@ -127,21 +127,21 @@
         font-size: 14px;
       }
 
-      .s_index_forums_index_dogArea {
+      .s_index_column_index_dogArea {
         flex-direction: column;
         margin: 0 0 195px;
       }
 
-      .s_index_forums_index_dog {
+      .s_index_column_index_dog {
         margin: 48px auto 0;
       }
 
-      .s_index_forums_index_dog_img {
+      .s_index_column_index_dog_img {
         width: 300px;
         border-radius: 20px;
       }
 
-      .s_index_forums_index_dog_para {
+      .s_index_column_index_dog_para {
         width: 300px;
         margin: 10px auto;
         color: #707070;
@@ -155,8 +155,8 @@
       }
 
       .s_index_donation_img {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        /* height: auto; */
         /* height: 240px; */
         /* width:100%;  */
       }
@@ -176,13 +176,14 @@
 
       .s_index_donation_Intro_title {
         font-size: 35px;
-        margin: 20px 0 0 20px;
+        margin: 15px 0 0 20px;
       }
 
       .s_index_donation_Intro_para {
-        width: 224px;
+        width:250px;
         font-size: 16px;
-        margin: 20px 0 0 24px;
+        /* margin: 20px 0 0 24px; */
+        margin: 20px auto;
       }
 
       .s_index_donation_Intro_btn_PC {
@@ -269,27 +270,26 @@ margin-left:660px ;
 /*----------- 標題結尾---------- */
 
 /* -------------主打活動---------- */
-      .s_index_mainActivity_choiceArea_ph {
+      .s_index_MonthlyEvents_choiceArea_ph {
         display: none;
       }
 
-      .s_index_mainActivity_choiceArea_PC {
+      .s_index_MonthlyEvents_choiceArea_PC {
         display: block;
-
       }
 
       .s_index_choiceAreaImg_PC {
-        height: 640px;
-        width: 1280px;
+        height: 600px;
+        /* width: 1024px; */
         padding: 100px 0;
-        z-index: -10;
         position: relative;
+        display: flex;
       }
 
       .s_index_choiceArea_choice_PC {
         margin: 240px 0 0;
         position: absolute;
-        right: 90px;
+        right: 200px;
         top: 180px;
       }
 
@@ -299,12 +299,12 @@ margin-left:660px ;
 
       .s_index_choice_PC {
         font-size: 22px;
-        line-height: 80px;
+        line-height: 75px;
         color: #707070;
         text-indent: 60px;
         background-color: #F9DD83;
         border-radius: 36px;
-        height: 80px;
+        height:75px;
         width: 600px;
         z-index: 10;
         margin: 16px 0;
@@ -316,38 +316,38 @@ margin-left:660px ;
 
 
 /* ---------------專欄-------------- */
-      .s_index_btnGroup {
+      .s_index_columnBtnGroup {
         text-align: center;
         margin: 75px 0 115px;
       }
 
-      .s_index_blueBtn {
-        height: 66px;
-        width: 287px;
+      .s_index_columnBlueBtn {
+        height: 50px;
+        width: 250px;
         border: 0;
         background-color: #ffffff;
         color: #89A7C2;
         border-radius: 36px;
         font-size: 30px;
+        margin: 0 15px;
       }
 
-      .s_index_forums_index_dogArea {
+      .s_index_column_index_dogArea {
         flex-direction: row;
       }
 
-      .s_index_forums_index_dog {
+      .s_index_column_index_dog {
         margin: 0 20px;
-
       }
 
-      .s_index_forums_index_dog_img {
-        width: 537px;
+      .s_index_column_index_dog_img {
+        width: 400px;
         border-radius: 60px;
       }
 
-      .s_index_forums_index_dog_para {
-        width: 380px;
-        margin: 35px auto 325px;
+      .s_index_column_index_dog_para {
+        /* width: 380px; */
+        /* margin: 35px auto 300px; */
         color: #707070;
         font-size: 16px;
       }
