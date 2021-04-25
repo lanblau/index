@@ -1,0 +1,137 @@
+@media (min-width:300px) {
+     
+      .s_index_MonthlyEvents_choiceArea_PC {
+        display: none;
+      }
+
+      .s_index_MonthlyEvents_choiceArea_ph {
+        width: 360px;
+        margin: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
+
+      .s_index_choiceArea_ph {
+        margin: 15px 10px;
+      }
+
+      .s_index_higher {
+        margin-top: -40px;
+      }
+
+      .s_index_lower {
+        margin-top: 70px;
+      }
+
+      .s_index_choiceAreaImg_ph {
+        /* height:155px; */
+        width: 155px;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+      }
+
+      .s_index_choice_ph {
+        font-size: 14px;
+        color: var(--maindarkgray);
+        background-color:var(--mainyellow);
+        border-radius: 0 0 10px 10px;
+        height: 50px;
+        width: 139px;
+        padding: 10px 8px 0;
+        margin: -10px 0;
+      }
+
+/*-----------專欄------------*/
+
+      .s_index_columnBtnGroup {
+        text-align: center;
+        /* margin: 35px 0 90px; */
+      }
+
+      .s_index_columnBlueBtn {
+        height: 35px;
+        width: 135px;
+        border: 0;
+        background-color: #ffffff;
+        color: var(--mainblue);
+        border-radius: 43px;
+        font-size: 14px;
+      }
+
+      .s_index_column_index_dogArea {
+        flex-direction: column;
+        margin: 0 0 195px;
+      }
+
+      .s_index_column_index_dog {
+        margin: 48px auto 0;
+      }
+
+      .s_index_column_index_dog_img {
+        width: 300px;
+        border-radius: 20px;
+      }
+
+      .s_index_column_index_dog_para {
+        width: 300px;
+        margin: 10px auto;
+        color: var(--maindarkgray);
+        font-size: 14px;
+      }
+
+/* ------------捐贈--------- */
+      .s_index_donation_imgIntro {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .s_index_donation_img {
+        width: 100%;
+        /* height: auto; */
+        /* height: 240px; */
+        /* width:100%;  */
+      }
+
+      .s_index_donation_Intro {
+        /* width: 375px; */
+        max-width: 100%;
+        height: auto;
+        background-color:#70707093;
+        color: #F7F4EE;
+      }
+
+      .s_index_donation_IntroAll {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .s_index_donation_Intro_title {
+        font-size: 35px;
+        margin: 15px 0 0 20px;
+      }
+
+      .s_index_donation_Intro_para {
+        width:250px;
+        font-size: 16px;
+        /* margin: 20px 0 0 24px; */
+        margin: 20px auto;
+      }
+
+      .s_index_donation_Intro_btn_PC {
+        display: none;
+      }
+
+      .s_index_donation_Intro_btn_ph {
+        display: inline-block;
+        width: 142px;
+        height: 35px;
+        border-radius: 17px;
+        background-color: #ffffff;
+        font-size: 16px;
+        border: 0;
+        color: var(--maindarkgray);
+        margin: 10px 0 26px 130px;
+      }
+    }
