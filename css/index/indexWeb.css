@@ -28,32 +28,28 @@
 
     @media (min-width: 500px) {
 /* -------------主打活動---------- */
-.s_index_MonthlyEvents{
-  margin: 300px auto;
-}
+      .s_index_MonthlyEvents{
+        margin: 300px auto;
+      }
       .s_index_MonthlyEvents_choiceArea_ph {
         display: none;
       }
 
       .s_index_MonthlyEvents_choiceArea_PC {
         display: block;
+        position: relative;
       }
 
       .s_index_choiceAreaImg_PC {
-        height: 600px;
-        /* width: 1024px; */
-        padding: 100px 0;
-        /* position: relative; */
-        position: absolute;
+        height: 600px;     
         display: flex;
       }
 
       .s_index_choiceArea_choice_PC {
-        margin: 240px 0 0;
-        position: relative;
-        /* position: absolute; */       
-        right: 200px;
-        top: 180px;
+        margin: 240px 0 0;        
+        position: absolute;       
+        right: 15%;
+        top:-50px;     
       }
 
       .s_index_choice_PC:hover {
@@ -74,7 +70,7 @@
       }
 /*-----------每月主打介紹--------*/
 .s_index_MonthlyEvents_intro{
-margin: 0 auto;
+margin: 180px 400px;
 
 }
 .s_index_MonthlyEvents_intro_row{
@@ -83,7 +79,8 @@ color:var(--mainblue) ;
 }
 .s_index_MonthlyEvents_introLeft{
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+  margin-top: 100px; 
 }
 .s_index_MonthlyEvents_intro_miniTitle{
   font-size: 22px; 
@@ -92,9 +89,16 @@ color:var(--mainblue) ;
   font-size: 16px;
   width: 500px;  
 }
-/* .s_index_MonthlyEvents_introRight{
-} */
-
+.s_index_MonthlyEvents_introRight img {
+  display: block;
+  width: 300px;
+}
+.s_index_MonthlyEvents_cat{
+  margin-left: -100px;
+}
+.s_index_right{
+  margin-left: 100px;
+}
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {
         text-align: center;
