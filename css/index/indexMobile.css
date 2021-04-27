@@ -53,7 +53,46 @@
         padding: 30px 8px ;
         margin: -10px 0;
       }
-
+/*-----------每月主打介紹--------*/
+.s_index_MonthlyEvents_intro{
+margin: 180px auto;
+width: 350px;
+}
+.s_index_MonthlyEvents_intro_row{
+display:flex;
+flex-direction:row;
+color:var(--mainblue) ;
+}
+.s_index_MonthlyEvents_introLeft{
+  display: flex;
+  flex-direction: column; 
+  /* margin-top: 120px;  */
+}
+.s_dogShow{
+  flex: 1;
+   display: flex;
+}
+.s_index_MonthlyEvents_intro_miniTitle{
+  font-size: 16px; 
+}
+.s_index_MonthlyEvents_intro__ColumnPara{
+  font-size: 14px;
+  width: 250px;  
+}
+.s_index_MonthlyEvents_introRight img {
+  /* display: inline-block; */
+  width:200px;
+  /* margin-top: 50px; */
+}
+.s_index_MonthlyEvents_cat{
+  /* margin-right: 4rem; */
+}
+.s_index_right{
+  /* margin-left: 20px; */
+}
+.s_hidden{
+  display: none;
+}
 /*-----------專欄------------*/
 
       .s_index_columnBtnGroup {

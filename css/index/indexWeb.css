@@ -86,6 +86,7 @@ width: 1024px;
 }
 .s_index_MonthlyEvents_intro_row{
 display:flex;
+flex-direction: row;
 color:var(--mainblue) ;
 }
 .s_index_MonthlyEvents_introLeft{
@@ -104,13 +105,13 @@ color:var(--mainblue) ;
   display: inline-block;
   width:200px;
   margin-top: 50px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 .s_index_MonthlyEvents_cat{
-  margin-left: -100px;
+  margin-right: 4rem;
 }
 .s_index_right{
-  margin-left: 100px;
+  margin-left: 20px;
 }
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {
@@ -151,28 +152,27 @@ color:var(--mainblue) ;
       }
 
 /* ---------------捐贈----------------- */
-.s_index_donation_imgIntro{
-  /* margin: 0 auto; */
-  /* border: 1px red solid; */
-  width: 100%;
-  /* position: absolute; */
+.s_index_donation_imgIntro{  
+  width: 100%;  
+ position: relative;
 }      
 .s_index_donation_img {
-        /* height: 600px; */
+        height:auto;
         width: 1500px;
-        margin:4rem auto;
-        /* position: absolute; */
-        /* background-attachment: fixed; */
+        margin:4rem auto;      
       }
 
       .s_index_donation_Intro {
         width: 500px;
         height: 350px;
         background-color:#70707093;
-        position: relative;
+        /* position: relative; */
+        position: absolute;
         border-radius: 40px;
-        top: -600px;
+        top:200px;
         left: 250px;
+        /* top: -700px;
+        left: 250px; */
         color: #F7F4EE;
       }
       .s_index_donation_IntroAll {
