@@ -1,7 +1,9 @@
-    /* body {
-      font-family: 'Poppins', 'Noto Sans TC', sans-serif;
-      background-color: #F7F4EE;    
-    } */
+    body {
+      /* font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+      background-color: #F7F4EE;     */
+      /* margin: 0 auto; */
+      /* width: 100%; */
+    } 
 
     a {
       text-decoration: none;
@@ -27,9 +29,18 @@
  
 
     @media (min-width: 500px) {
+      .s_index_subtitle_PC {
+        display: block;
+      margin: 100px auto;
+      width: 610px;  
+      }
+      .s_index_subtitle_ph{
+        display: none;
+      }
 /* -------------主打活動---------- */
       .s_index_MonthlyEvents{
         margin: 300px auto;
+             
       }
       .s_index_MonthlyEvents_choiceArea_ph {
         display: none;
@@ -70,8 +81,8 @@
       }
 /*-----------每月主打介紹--------*/
 .s_index_MonthlyEvents_intro{
-margin: 180px 400px;
-
+margin: 180px auto;
+width: 1024px;
 }
 .s_index_MonthlyEvents_intro_row{
 display:flex;
@@ -80,7 +91,7 @@ color:var(--mainblue) ;
 .s_index_MonthlyEvents_introLeft{
   display: flex;
   flex-direction: column; 
-  margin-top: 100px; 
+  margin-top: 120px; 
 }
 .s_index_MonthlyEvents_intro_miniTitle{
   font-size: 22px; 
@@ -90,8 +101,10 @@ color:var(--mainblue) ;
   width: 500px;  
 }
 .s_index_MonthlyEvents_introRight img {
-  display: block;
-  width: 300px;
+  display: inline-block;
+  width:200px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 .s_index_MonthlyEvents_cat{
   margin-left: -100px;
@@ -101,8 +114,8 @@ color:var(--mainblue) ;
 }
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {
-        text-align: center;
-        margin: 75px 0 115px;
+        /* text-align: center; */
+        margin: 100px auto;
       }
 
       .s_index_columnBlueBtn {
@@ -113,11 +126,12 @@ color:var(--mainblue) ;
         color: var(--mainblue);
         border-radius: 36px;
         font-size: 30px;
-        margin: 0 15px;
+        margin: 0 30px;
       }
 
       .s_index_column_index_dogArea {
         flex-direction: row;
+        margin: 50px auto;
       }
 
       .s_index_column_index_dog {
@@ -146,7 +160,7 @@ color:var(--mainblue) ;
 .s_index_donation_img {
         /* height: 600px; */
         width: 1500px;
-        margin: 0 auto;
+        margin:4rem auto;
         /* position: absolute; */
         /* background-attachment: fixed; */
       }

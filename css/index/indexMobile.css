@@ -1,16 +1,27 @@
 @media (min-width:300px) {
-     
+     /*-------標題----------*/
+      .s_index_subtitle_PC {
+        display: none;
+      }
+      .s_index_subtitle_ph{
+        display: block;
+      margin: 50px auto;
+      width: 260px;  
+      }
+      /*-----------本月主打----------*/
+       .s_index_MonthlyEvents{
+        margin: 200px auto;             
+      }
       .s_index_MonthlyEvents_choiceArea_PC {
         display: none;
       }
 
       .s_index_MonthlyEvents_choiceArea_ph {
         width: 360px;
-        margin: 80px 0;
+        margin: 50px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
       }
 
       .s_index_choiceArea_ph {
@@ -37,9 +48,9 @@
         color: var(--maindarkgray);
         background-color:var(--mainyellow);
         border-radius: 0 0 10px 10px;
-        height: 50px;
-        width: 139px;
-        padding: 10px 8px 0;
+        height:80px;
+        width: 155px;
+        padding: 30px 8px ;
         margin: -10px 0;
       }
 
@@ -56,17 +67,17 @@
         border: 0;
         background-color: #ffffff;
         color: var(--mainblue);
-        border-radius: 43px;
+        border-radius: 40px;
         font-size: 14px;
       }
 
       .s_index_column_index_dogArea {
         flex-direction: column;
-        margin: 0 0 195px;
+        margin: 0 0 100px;
       }
 
       .s_index_column_index_dog {
-        margin: 48px auto 0;
+        margin: 50px auto 0;
       }
 
       .s_index_column_index_dog_img {
@@ -85,12 +96,14 @@
       .s_index_donation_imgIntro {
         display: flex;
         flex-direction: column;
+        margin: 50px auto;
       }
 
       .s_index_donation_img {
         width: 100%;
         /* height: auto; */
-        /* height: 240px; */
+        height: 240px;
+        object-fit: cover;
         /* width:100%;  */
       }
 
