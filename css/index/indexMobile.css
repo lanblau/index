@@ -11,6 +11,10 @@
       margin: 50px auto;
       width: 260px;  
       }
+      /*--------------影片區----------*/
+      .s_index_videoSection{
+        display: none;
+      }
       /*-----------本月主打----------*/
        .s_index_MonthlyEvents{
         margin: 200px auto;
