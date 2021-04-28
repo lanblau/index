@@ -38,10 +38,13 @@
     @media (min-width: 500px) {
 /*----------- --標題-------------*/
       .s_index_subtitle_PC {
-        display: block;
-      margin: 100px auto;
-      width: 610px;  
+        /* display: block;*/
+        margin: 100px 0;
+        display: flex;
+  justify-content: center;
+      /* width: 610px;   */
       }
+      
       .s_index_subtitle_ph{
         display: none;
       }
@@ -102,7 +105,7 @@
         /* z-index: 10; */
         margin: 16px 0;
       }
-/*-----------每月主打介紹--------*/
+/*------------每月主打介紹--------------*/
 .s_index_MonthlyEvents_intro{
 margin: 180px auto;
 width: 1000px;
@@ -143,14 +146,84 @@ color:var(--mainblue) ;
 .s_dogShow{
 margin: 0;
 }
+/*--------------熱銷商品-------------*/
+.s_hotSaleSection_part{
+margin-bottom: 200px;
+}
+.s_hotSaleSection_ProductsSec{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.s_hotSaleSection_Product{
+  width: 300px;
+  height: 280px;
+  background-color:var(--mainyellow);
+  border-radius: 40px 40px 104px;
+  position: relative;
+  margin: 180px 45px 100px;  
+}
+.s_hotSaleSection_Product_img {
+  width: 260px;
+  position: absolute;
+  top: -180px;
+  left: 35px;
+}
+.s_hotSaleSection_Product_img img{
+  width: 230px; 
+}
+.s_hotSaleSection_Product_productName{
+  font-size: 18px;
+  width: 240px;
+  margin: 0 auto;
+  padding: 80px 10px 5px;
+}
+.s_hotSaleSection_Product_productPrice{
+  font-size: 18px;
+  text-align: center;
+}
+.s_hotSaleSection_Product_BtnGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.s_hotSaleSection_Product_ShopBtn{
+        height: 45px;
+        width: 200px;
+        border: 0;
+        background-color: #ffffff;
+        color: var(--maindarkgray);
+        border-radius: 36px;
+        font-size: 18px;
+        /* margin: 0 auto; */
+}
+.s_hotSaleSection_Product_HeartBtn{
+  fill: var(--mainpink);
+  width: 25px;
+  height: 22px;
+  margin: 0 20px;
+}
+.s_hotSaleSection_Product_more{
+  color: var(--mainblue);
+  font-size: 30px;
+  text-align: center;
+}
 /*---------合作品牌-----*/
 .s_index_brandPartnershipSection_imageSection{
-  width: 1440px;
-  margin: 0 auto;
+  /* width: 1440px; */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .s_index_brandPartnershipSection_image{
-  margin: 0 50px;
+  margin: 0 20px;
+}
+.s_index_brandPartnershipSection_image img{  
+  width: 200px;
 }
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {
@@ -166,7 +239,7 @@ margin: 0;
         color: var(--mainblue);
         border-radius: 36px;
         font-size: 30px;
-        margin: 0 30px;
+        margin: 0 20px;
       }
 
       .s_index_column_index_dogArea {
