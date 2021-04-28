@@ -1,9 +1,11 @@
-    body {
+     body {
       /* font-family: 'Poppins', 'Noto Sans TC', sans-serif;
       background-color: #F7F4EE;     */
       /* margin: 0 auto; */
       /* width: 100%; */
-    } 
+      /* font-weight: 200; */
+    }
+
 
     a {
       text-decoration: none;
@@ -15,7 +17,12 @@
       list-style-type: none;
     }
 
-
+ .s_fixed {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
     .s_index_columnBlueBtn:hover {
       background-color: var(--mainblue);
       color: #ffffff;
@@ -37,10 +44,25 @@
       .s_index_subtitle_ph{
         display: none;
       }
+/*--------------影片區----------*/
+      .s_index_videoSection{
+        position: relative;
+        margin-top: 100px;
+      }
+      .s_index_videoSection_house{
+        position: absolute;
+        top: -200px;
+      }
+      .s_index_video{
+        margin-left: 300px;
+        margin-top: 150px;
+      }
+
 /* -------------主打活動---------- */
+
       .s_index_MonthlyEvents{
         margin: 300px auto;
-             
+        width: 1920px;             
       }
       .s_index_MonthlyEvents_choiceArea_ph {
         display: none;
@@ -76,13 +98,13 @@
         border-radius: 36px;
         height:75px;
         width: 600px;
-        z-index: 10;
+        /* z-index: 10; */
         margin: 16px 0;
       }
 /*-----------每月主打介紹--------*/
 .s_index_MonthlyEvents_intro{
 margin: 180px auto;
-width: 1024px;
+width: 1000px;
 }
 .s_index_MonthlyEvents_intro_row{
 display:flex;
@@ -96,10 +118,12 @@ color:var(--mainblue) ;
 }
 .s_index_MonthlyEvents_intro_miniTitle{
   font-size: 22px; 
+  margin: 0;
 }
-.s_index_MonthlyEvents_intro__ColumnPara{
+.s_index_MonthlyEvents_intro_ColumnPara{
   font-size: 16px;
-  width: 500px;  
+  width: 500px;
+  margin: 0;  
 }
 .s_index_MonthlyEvents_introRight img {
   display: inline-block;
@@ -107,11 +131,16 @@ color:var(--mainblue) ;
   margin-top: 50px;
   /* margin-left: 30px; */
 }
-.s_index_MonthlyEvents_cat{
-  margin-right: 4rem;
+.s_index_MonthlyEvents_cat img{
+  margin-right: 3rem;
+  width:150px;
+
 }
 .s_index_right{
-  margin-left: 20px;
+  margin-left: 5rem;
+}
+.s_dogShow{
+margin: 0;
 }
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {

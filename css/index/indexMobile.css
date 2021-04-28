@@ -1,3 +1,6 @@
+/* *{
+   outline: solid 1px  rgb(247, 95, 40);
+} */
 @media (min-width:300px) {
      /*-------標題----------*/
       .s_index_subtitle_PC {
@@ -10,7 +13,8 @@
       }
       /*-----------本月主打----------*/
        .s_index_MonthlyEvents{
-        margin: 200px auto;             
+        margin: 200px auto;
+        width: 360px;             
       }
       .s_index_MonthlyEvents_choiceArea_PC {
         display: none;
@@ -69,27 +73,26 @@ color:var(--mainblue) ;
   /* margin-top: 120px;  */
 }
 .s_dogShow{
-  flex: 1;
-   display: flex;
+/* order: 1; */
+margin: -100px 0 0 -150px;
+ 
 }
 .s_index_MonthlyEvents_intro_miniTitle{
   font-size: 16px; 
+  /* order: 2; */
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
-.s_index_MonthlyEvents_intro__ColumnPara{
+.s_index_MonthlyEvents_intro_ColumnPara{
   font-size: 14px;
-  width: 250px;  
+  width: 250px;
+  margin: 0 50px;
+  /* order: 3;   */
 }
 .s_index_MonthlyEvents_introRight img {
-  /* display: inline-block; */
-  width:200px;
-  /* margin-top: 50px; */
+  width:150px;
 }
-.s_index_MonthlyEvents_cat{
-  /* margin-right: 4rem; */
-}
-.s_index_right{
-  /* margin-left: 20px; */
-}
+
 .s_hidden{
   display: none;
 }
