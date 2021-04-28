@@ -36,6 +36,7 @@
  
 
     @media (min-width: 500px) {
+/*----------- --標題-------------*/
       .s_index_subtitle_PC {
         display: block;
       margin: 100px auto;
@@ -141,6 +142,15 @@ color:var(--mainblue) ;
 }
 .s_dogShow{
 margin: 0;
+}
+/*---------合作品牌-----*/
+.s_index_brandPartnershipSection_imageSection{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.s_index_brandPartnershipSection_image{
+  margin: 0 50px;
 }
 /* ---------------專欄-------------- */
       .s_index_columnBtnGroup {
