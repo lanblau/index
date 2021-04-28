@@ -116,7 +116,14 @@ margin-bottom: 200px;
   align-items: center;
   justify-content: center;
 }
-
+/* .carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+} */
 .s_hotSaleSection_Product{
   width: 300px;
   height: 280px;
@@ -279,4 +286,37 @@ margin-bottom: 200px;
         color: var(--maindarkgray);
         margin: 10px 0 26px 130px;
       }
+/*----------捐贈計數----------*/
+      .s_donationCount{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 50px 0;
+      }
+      .s_donationCount_part{
+        margin: 15px 17px;
+        width: 110px;
+
+      }
+      .s_donationCount_Donate_icon{
+        fill: var(--mainpink);
+        width: 45px;
+        height: 35px;
+        margin: 10px 0;
+      }
+      .s_donationCount_para{
+        color: var(--mainpink);
+        font-size: 12px;
+      }
+      .s_donationCount_number{
+font-size: 14px;
+font-weight: 700;
+
+}
+/*--------logo-----------*/
+.s_index_bottomLogo{  
+  display: none; 
+}
     }
