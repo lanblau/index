@@ -60,6 +60,9 @@
       .s_index_video{
         margin-left: 300px;
         margin-top: 150px;
+        -webkit-mask-image: url("../../images/Index/video-mask.png");
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 100% 100%;
       }
 
 /* -------------主打活動---------- */
@@ -191,8 +194,8 @@ margin-bottom: 200px;
   margin-top: 10px;
 }
 .s_hotSaleSection_Product_ShopBtn{
-        height: 45px;
-        width: 200px;
+        height: 35px;
+        width: 150px;
         border: 0;
         background-color: #ffffff;
         color: var(--maindarkgray);
