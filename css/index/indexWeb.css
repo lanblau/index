@@ -9,6 +9,7 @@
 
     a {
       text-decoration: none;
+      color:none;
     }
     a:hover {
     text-decoration: none;
@@ -61,8 +62,8 @@
         margin-left: 300px;
         margin-top: 150px;
         -webkit-mask-image: url("../../images/Index/video-mask.png");
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
       }
 
 /* -------------主打活動---------- */
@@ -149,7 +150,7 @@ color:var(--mainblue) ;
 .s_dogShow{
 margin: 0;
 }
-/*--------------熱銷商品-------------*/
+/*------------熱銷商品-------------*/
 .s_hotSaleSection_part{
 margin-bottom: 200px;
 }
@@ -175,17 +176,21 @@ margin-bottom: 200px;
   left: 35px;
 }
 .s_hotSaleSection_Product_img img{
-  width: 230px; 
+  /* width: 230px; */
+  height: 255px; 
 }
 .s_hotSaleSection_Product_productName{
   font-size: 18px;
   width: 240px;
-  margin: 0 auto;
-  padding: 80px 10px 5px;
+  height: 160px;
+  overflow: hidden;
+  /* margin: 10px auto; */
+  padding: 80px 10px 0;
 }
 .s_hotSaleSection_Product_productPrice{
   font-size: 18px;
   text-align: center;
+  /* margin: 10px auto; */
 }
 .s_hotSaleSection_Product_BtnGroup{
   display: flex;
@@ -230,7 +235,7 @@ margin-bottom: 200px;
 }
 /* ---------------專欄-------------- */
      .s_index_column{
-margin-top: 200px;
+      margin-top: 300px;
      } 
      .s_index_columnBtnGroup {
         /* text-align: center; */
@@ -238,14 +243,15 @@ margin-top: 200px;
       }
 
       .s_index_columnBlueBtn {
-        height: 50px;
-        width: 250px;
+        height: 45px;
+        width: 230px;
         border: 0;
         background-color: #ffffff;
         color: var(--mainblue);
         border-radius: 36px;
-        font-size: 30px;
+        font-size: 22px;
         margin: 0 20px;
+        letter-spacing: 1.5px;
       }
 
       .s_index_column_index_dogArea {
@@ -349,7 +355,7 @@ font-weight: 600;
 }
 /*--------logo-----------*/
 .s_index_bottomLogo{
-  margin: 50px auto 100px;
+  margin: 150px auto 150px;
   display: flex;
   justify-content: center;
 }
