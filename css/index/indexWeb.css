@@ -199,10 +199,14 @@ margin-bottom: 200px;
 .s_hotSaleSection_Product_productName{
   font-size: 18px;
   width: 240px;
-  height: 160px;
-  overflow: hidden;
+  /* height: 160px;  */
   /* margin: 10px auto; */
   padding: 80px 10px 0;
+  text-overflow : ellipsis; 
+  overflow : hidden;  
+  display: -webkit-box; 
+   -webkit-line-clamp: 2; 
+   -webkit-box-orient: vertical;
 }
 .s_hotSaleSection_Product_productPrice{
   font-size: 18px;
@@ -223,19 +227,26 @@ margin-bottom: 200px;
         color: var(--maindarkgray);
         border-radius: 36px;
         font-size: 18px;
+        cursor: pointer;
         /* margin: 0 auto; */
 }
 .s_hotSaleSection_Product_HeartBtn{
-  fill: var(--mainpink);
+  fill:  var(--maingray);
   width: 25px;
   height: 22px;
   margin: 0 20px;
+  cursor: pointer;
 }
+.s_heart_color{
+  fill: var(--mainpink);
+  /* transform: scale(1.2); */
+   }
 .s_hotSaleSection_Product_more{
   color: var(--mainblue);
   font-size: 30px;
   text-align: center;
 }
+
 /*---------合作品牌-----*/
 .s_index_brandPartnershipSection_imageSection{
   /* width: 1440px; */
@@ -250,7 +261,7 @@ margin-bottom: 200px;
 .s_index_brandPartnershipSection_image img{  
   width: 200px;
 }
-/* ---------------專欄-------------- */
+/* ---------------專欄------------- */
      .s_index_column{
       margin-top: 300px;
      } 
@@ -269,23 +280,29 @@ margin-bottom: 200px;
         font-size: 22px;
         margin: 0 20px;
         letter-spacing: 1.5px;
+         cursor: pointer;
       }
 
-      .s_index_column_index_dogArea {
+      .s_index_column_Area {
+        display: flex;
         flex-direction: row;
         margin: 50px auto;
+        justify-content: center;
+        align-items: center;
       }
 
-      .s_index_column_index_dog {
+      .s_index_column_dog {
         margin: 0 20px;
       }
 
-      .s_index_column_index_dog_img {
+      .s_index_column_dog_img {
         width: 400px;
+        height: 250px;
         border-radius: 60px;
+        object-fit: cover;
       }
 
-      .s_index_column_index_dog_para {
+      .s_index_column_dog_para {
         /* width: 380px; */
         /* margin: 35px auto 300px; */
         color: var(--maindarkgray);
@@ -296,8 +313,16 @@ margin-bottom: 200px;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
       }
+      .s_index_column_DogBtn{
+        background-color:var(--mainblue);
+        color: #ffffff;
+      }
+      .s_index_column_CatArea{
+        /* visibility: hidden; */
+        display: none;
+      }
 
-/* ---------------捐贈----------------- */
+/* ------------捐贈-------------- */
 .s_index_donation_imgIntro{  
   width: 100%;  
  position: relative;

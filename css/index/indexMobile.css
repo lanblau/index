@@ -1,134 +1,153 @@
-/* *{
+        /* *{
    outline: solid 1px  rgb(247, 95, 40);
 } */
-@media (min-width:300px) {
-     /*-------標題----------*/
-      .s_index_subtitle_PC {
-        display: none;
-      }
-      .s_index_subtitle_ph{
-        /* display: block; */
-         display: flex;
-  justify-content: center;
-      margin: 50px 0;
-      /* width: 260px;   */
-      }
-      /*--------------影片區----------*/
-      /* .s_index_videoSection{
+        @media (min-width:300px) {
+
+            /*-------標題----------*/
+            .s_index_subtitle_PC {
+                display: none;
+            }
+
+            .s_index_subtitle_ph {
+                /* display: block; */
+                display: flex;
+                justify-content: center;
+                margin: 50px 0;
+                /* width: 260px;   */
+            }
+
+            /*--------------影片區----------*/
+            /* .s_index_videoSection{
         display: none;
       } */
-      /*-----------本月主打----------*/
-       .s_index_MonthlyEvents{
-        margin: 200px auto;
-        width: 360px;             
-      }
-      .s_index_MonthlyEvents_choiceArea_PC {
-        display: none;
-      }
+            /* .s_index_videoSection{
+        position: relative;
+        width: 375px;
+        height: 812px;
+      } */
+            /*-----------本月主打----------*/
+            .s_index_MonthlyEvents {
+                margin: 200px auto;
+                width: 360px;
+            }
 
-      .s_index_MonthlyEvents_choiceArea_ph {
-        width: 360px;
-        margin: 50px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+            .s_index_MonthlyEvents_choiceArea_PC {
+                display: none;
+            }
 
-      .s_index_choiceArea_ph {
-        margin: 15px 10px;
-      }
+            .s_index_MonthlyEvents_choiceArea_ph {
+                width: 360px;
+                margin: 50px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-      .s_index_higher {
-        margin-top: -40px;
-      }
+            .s_index_choiceArea_ph {
+                margin: 15px 10px;
+            }
 
-      .s_index_lower {
-        margin-top: 70px;
-      }
+            .s_index_higher {
+                margin-top: -40px;
+            }
 
-      .s_index_choiceAreaImg_ph {
-        /* height:155px; */
-        width: 155px;
-        border-radius: 10px 10px 0 0;
-        margin: 0;
-      }
+            .s_index_lower {
+                margin-top: 70px;
+            }
 
-      .s_index_choice_ph {
-        font-size: 14px;
-        color: var(--maindarkgray);
-        background-color:var(--mainyellow);
-        border-radius: 0 0 10px 10px;
-        height:80px;
-        width: 155px;
-        padding: 25px 8px ;
-        margin: -10px 0;        
-        text-overflow : ellipsis; 
-        overflow : hidden; 
-        /* white-space: nowrap; */
-        display: -webkit-box; 
-        -webkit-line-clamp: 2; 
-        -webkit-box-orient: vertical;
-      }
-      /* .s_index_choice_ph_icon{
+            .s_index_choiceAreaImg_ph {
+                /* height:155px; */
+                width: 155px;
+                border-radius: 10px 10px 0 0;
+                margin: 0;
+            }
+
+            .s_index_choice_ph {
+                font-size: 14px;
+                color: var(--maindarkgray);
+                background-color: var(--mainyellow);
+                border-radius: 0 0 10px 10px;
+                height: 80px;
+                width: 155px;
+                padding: 25px 8px;
+                margin: -10px 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                /* white-space: nowrap; */
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            /* .s_index_choice_ph_icon{
         width: 8px;
         height: 8px;
        fill: var(--maindarkgray);
        margin-right: 5px;
       } */
-/*-----------每月主打介紹--------*/
-.s_index_MonthlyEvents_intro{
-margin: 180px auto;
-width: 350px;
-}
-.s_index_MonthlyEvents_intro_row{
-display:flex;
-flex-direction:row;
-color:var(--mainblue) ;
-}
-.s_index_MonthlyEvents_introLeft{
-  display: flex;
-  flex-direction: column; 
-  /* margin-top: 120px;  */
-}
-.s_dogShow{
-/* order: 1; */
-margin: -100px 0 0 -150px;
- 
-}
-.s_index_MonthlyEvents_intro_miniTitle{
-  font-size: 16px; 
-  /* order: 2; */
-  margin-bottom: 30px;
-  margin-left: 50px;
-}
-.s_index_MonthlyEvents_intro_ColumnPara{
-  font-size: 14px;
-  width: 250px;
-  margin: 0 50px;
-  /* order: 3;   */
-}
-.s_index_MonthlyEvents_introRight img {
-  width:150px;
-}
+            /*--------每月主打介紹--------*/
+            .s_index_MonthlyEvents_intro {
+                margin: 180px auto;
+                width: 350px;
+            }
 
-.s_hidden{
-  display: none;
-}
+            .s_index_MonthlyEvents_intro_row {
+                display: flex;
+                flex-direction: row;
+                color: var(--mainblue);
+            }
 
-/*--------------熱銷商品-------------*/
-.s_btnMargin{
-margin: 10px ;
-}
-.s_hotSaleSection_part{
-margin-bottom: 200px;
-}
-.s_hotSaleSection_ProductsSec{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-/* .carousel-cell {
+            .s_index_MonthlyEvents_introLeft {
+                display: flex;
+                flex-direction: column;
+                /* margin-top: 120px;  */
+            }
+
+            .s_dogShow {
+                /* order: 1; */
+                margin: -100px 0 0 -150px;
+
+            }
+
+            .s_index_MonthlyEvents_intro_miniTitle {
+                font-size: 16px;
+                /* order: 2; */
+                margin-bottom: 30px;
+                margin-left: 50px;
+            }
+
+            .s_index_MonthlyEvents_intro_ColumnPara {
+                font-size: 14px;
+                width: 250px;
+                margin: 0 50px;
+                /* order: 3;   */
+            }
+
+            .s_index_MonthlyEvents_introRight img {
+                width: 150px;
+            }
+
+            .s_hidden {
+                display: none;
+            }
+
+            /*--------------熱銷商品-------------*/
+            .s_btnMargin {
+                margin: 10px;
+            }
+
+            .s_hotSaleSection_part {
+                margin-bottom: 200px;
+            }
+
+            .s_hotSaleSection_ProductsSec {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+  /* .carousel-cell {
   width: 66%;
   height: 200px;
   margin-right: 10px;
@@ -136,211 +155,239 @@ margin-bottom: 200px;
   border-radius: 5px;
   counter-increment: carousel-cell;
 } */
-.s_hotSaleSection_Product{
-  width: 300px;
-  height: 280px;
-  background-color:var(--mainyellow);
-  border-radius: 40px 40px 104px;
-  position: relative;
-  margin: 180px 45px 100px;  
-}
-.s_hotSaleSection_Product_img {
-  width: 260px;
-  position: absolute;
-  top: -180px;
-  left: 35px;
-}
-.s_hotSaleSection_Product_img img{
-  width: 230px; 
-}
-.s_hotSaleSection_Product_productName{
-  font-size: 18px;
-  width: 240px;
-  margin: 0 auto;
-  padding: 80px 10px 5px;
-}
-.s_hotSaleSection_Product_productPrice{
-  font-size: 18px;
-  text-align: center;
-}
-.s_hotSaleSection_Product_BtnGroup{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-.s_hotSaleSection_Product_ShopBtn{
-        height: 45px;
-        width: 200px;
-        border: 0;
-        background-color: #ffffff;
-        color: var(--maindarkgray);
-        border-radius: 36px;
-        font-size: 18px;
-        /* margin: 0 auto; */
-}
-.s_hotSaleSection_Product_HeartBtn{
-  fill: var(--mainpink);
-  width: 25px;
-  height: 22px;
-  margin: 0 20px;
-}
-.s_hotSaleSection_Product_more{
-  color: var(--mainblue);
-  font-size: 30px;
-  text-align: center;
-}
+            .s_hotSaleSection_Product {
+                width: 300px;
+                height: 280px;
+                background-color: var(--mainyellow);
+                border-radius: 40px 40px 104px;
+                position: relative;
+                margin: 180px 45px 100px;
+            }
+
+            .s_hotSaleSection_Product_img {
+                width: 260px;
+                position: absolute;
+                top: -180px;
+                left: 35px;
+            }
+
+            .s_hotSaleSection_Product_img img {
+                width: 230px;
+            }
+
+            .s_hotSaleSection_Product_productName {
+                font-size: 18px;
+                width: 240px;
+                margin: 0 auto;
+                padding: 80px 10px 5px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            .s_hotSaleSection_Product_productPrice {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .s_hotSaleSection_Product_BtnGroup {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .s_hotSaleSection_Product_ShopBtn {
+                height: 45px;
+                width: 200px;
+                border: 0;
+                background-color: #ffffff;
+                color: var(--maindarkgray);
+                border-radius: 36px;
+                font-size: 18px;
+                /* margin: 0 auto; */
+            }
+
+            .s_hotSaleSection_Product_HeartBtn {
+                fill: var(--maingray);
+                width: 25px;
+                height: 22px;
+                margin: 0 20px;
+            }
+
+            .s_heart_color {
+                fill: var(--mainpink);
+                /* transform: scale(1.2); */
+            }
+
+            .s_hotSaleSection_Product_more {
+                color: var(--mainblue);
+                font-size: 30px;
+                text-align: center;
+            }
 
 
-/*---------合作品牌-----*/
-.s_index_brandPartnershipSection_imageSection{
-  /* width: 1440px; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.s_index_brandPartnershipSection_image img{
-  margin: 20px 15px;
- width:80px;
-}
+            /*---------合作品牌-----*/
+            .s_index_brandPartnershipSection_imageSection {
+                /* width: 1440px; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
 
-/*-----------專欄------------*/
+            .s_index_brandPartnershipSection_image img {
+                margin: 20px 15px;
+                width: 80px;
+            }
 
-      .s_index_columnBtnGroup {
-        text-align: center;
-        /* margin: 35px 0 90px; */
-      }
+            /*-----------專欄------------*/
 
-      .s_index_columnBlueBtn {
-        height: 35px;
-        width: 135px;
-        border: 0;
-        background-color: #ffffff;
-        color: var(--mainblue);
-        border-radius: 40px;
-        font-size: 14px;
-      }
+            .s_index_columnBtnGroup {
+                text-align: center;
+                /* margin: 35px 0 90px; */
+            }
 
-      .s_index_column_index_dogArea {
-        flex-direction: column;
-        margin: 0 0 100px;
-      }
+            .s_index_columnBlueBtn {
+                height: 35px;
+                width: 135px;
+                border: 0;
+                background-color: #ffffff;
+                color: var(--mainblue);
+                border-radius: 40px;
+                font-size: 14px;
+            }
 
-      .s_index_column_index_dog {
-        margin: 50px auto 0;
-      }
+            .s_index_column_Area {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 100px;
+            }
 
-      .s_index_column_index_dog_img {
-        width: 300px;
-        border-radius: 20px;
-      }
+            .s_index_column_dog {
+                margin: 50px auto 0;
+            }
 
-      .s_index_column_index_dog_para {
-        width: 300px;
-        margin: 10px auto;
-        color: var(--maindarkgray);
-        font-size: 14px;
-         text-overflow : ellipsis; 
-        overflow : hidden; 
-        /* white-space: nowrap; */
-        display: -webkit-box; 
-        -webkit-line-clamp: 2; 
-        -webkit-box-orient: vertical;
-      }
+            .s_index_column_dog_img {
+                width: 300px;
+                height: 180px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
 
-/* ------------捐贈--------- */
-      .s_index_donation_imgIntro {
-        display: flex;
-        flex-direction: column;
-        margin: 50px auto;
-      }
+            .s_index_column_dog_para {
+                width: 300px;
+                margin: 10px auto;
+                color: var(--maindarkgray);
+                font-size: 14px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
 
-      .s_index_donation_img {
-        width: 100%;
-        /* height: auto; */
-        height: 240px;
-        object-fit: cover;
-        /* width:100%;  */
-      }
+            /* ------------捐贈--------- */
+            .s_index_donation_imgIntro {
+                display: flex;
+                flex-direction: column;
+                margin: 50px auto;
+            }
 
-      .s_index_donation_Intro {
-        /* width: 375px; */
-        max-width: 100%;
-        height: auto;
-        background-color:#70707093;
-        color: #F7F4EE;
-      }
+            .s_index_donation_img {
+                width: 100%;
+                /* height: auto; */
+                height: 240px;
+                object-fit: cover;
+                /* width:100%;  */
+            }
 
-      .s_index_donation_IntroAll {
-        display: flex;
-        flex-direction: row;
-      }
+            .s_index_donation_Intro {
+                /* width: 375px; */
+                max-width: 100%;
+                height: auto;
+                background-color: #70707093;
+                color: #F7F4EE;
+            }
 
-      .s_index_donation_Intro_title {
-        font-size: 35px;
-        margin: 15px 0 0 20px;
-      }
+            .s_index_donation_IntroAll {
+                display: flex;
+                flex-direction: row;
+            }
 
-      .s_index_donation_Intro_para {
-        width:250px;
-        font-size: 16px;
-        /* margin: 20px 0 0 24px; */
-        margin: 20px auto;
-      }
+            .s_index_donation_Intro_title {
+                font-size: 35px;
+                margin: 15px 0 0 20px;
+            }
 
-      .s_index_donation_Intro_btn_PC {
-        display: none;
-      }
+            .s_index_donation_Intro_para {
+                width: 250px;
+                font-size: 16px;
+                /* margin: 20px 0 0 24px; */
+                margin: 20px auto;
+            }
 
-      .s_index_donation_Intro_btn_ph {
-        display: inline-block;
-        width: 142px;
-        height: 35px;
-        border-radius: 17px;
-        background-color: #ffffff;
-        font-size: 16px;
-        border: 0;
-        color: var(--maindarkgray);
-        margin: 10px 0 26px 160px;
-      }
-      .s_index_donation_Intro_btn_ph_icon{
-        width: 15px;
-        height: 15px;
-       fill: var(--maindarkgray);
+            .s_index_donation_Intro_btn_PC {
+                display: none;
+            }
 
-      }
-/*----------捐贈計數----------*/
-      .s_donationCount{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 50px 0;
-      }
-      .s_donationCount_part{
-        margin: 15px 17px;
-        width: 110px;
+            .s_index_donation_Intro_btn_ph {
+                display: inline-block;
+                width: 142px;
+                height: 35px;
+                border-radius: 17px;
+                background-color: #ffffff;
+                font-size: 16px;
+                border: 0;
+                color: var(--maindarkgray);
+                margin: 10px 0 26px 160px;
+            }
 
-      }
-      .s_donationCount_Donate_icon{
-        fill: var(--mainpink);
-        width: 45px;
-        height: 35px;
-        margin: 10px 0;
-      }
-      .s_donationCount_para{
-        color: var(--mainpink);
-        font-size: 12px;
-      }
-      .s_donationCount_number{
-font-size: 14px;
-font-weight: 700;
+            .s_index_donation_Intro_btn_ph_icon {
+                width: 15px;
+                height: 15px;
+                fill: var(--maindarkgray);
 
-}
-/*--------logo-----------*/
-.s_index_bottomLogo{  
-  display: none; 
-}
-    }
+            }
+
+            /*----------捐贈計數----------*/
+            .s_donationCount {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 80px 0;
+            }
+
+            .s_donationCount_part {
+                margin: 15px 17px;
+                width: 110px;
+
+            }
+
+            .s_donationCount_Donate_icon {
+                fill: var(--mainpink);
+                width: 45px;
+                height: 35px;
+                margin: 10px 0;
+            }
+
+            .s_donationCount_para {
+                color: var(--mainpink);
+                font-size: 12px;
+            }
+
+            .s_donationCount_number {
+                font-size: 14px;
+                font-weight: 700;
+
+            }
+
+            /*--------logo-----------*/
+            .s_index_bottomLogo {
+                display: none;
+            }
+        }

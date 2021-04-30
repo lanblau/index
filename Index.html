@@ -24,9 +24,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>PetLove 派樂星球</title>
-    <style>
-
-    </style>
+  
 </head>
 
 <body>
@@ -752,7 +750,8 @@
             <!-- <div class="s_index_videoSection_house"></div> -->
             <img src="./images/Index/house1.svg" alt="">
             <!-- width="1480px" height="1030px" -->
-            <video class="s_index_video" controls="controls" muted="muted" autoplay="autoplay" loop width="100%">
+            <video class="s_index_video" controls="controls" muted="muted" autoplay="autoplay" loop width="100%"
+                height="100%">
                 <source src="./images/Index/首頁影片.mp4" type="video/mp4">
                 <p>你的瀏覽器不支援 HTML 5 video</p>
             </video>
@@ -953,7 +952,7 @@
                             <p class="s_hotSaleSection_Product_productPrice">NT$1000</p>
                             <div class="s_hotSaleSection_Product_BtnGroup">
                                 <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                                <svg class="s_hotSaleSection_Product_HeartBtn">
+                                <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                     <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                                 </svg>
                             </div>
@@ -968,7 +967,7 @@
                             <p class="s_hotSaleSection_Product_productPrice">NT$1122</p>
                             <div class="s_hotSaleSection_Product_BtnGroup">
                                 <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                                <svg class="s_hotSaleSection_Product_HeartBtn">
+                                <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                     <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                                 </svg>
                             </div>
@@ -981,7 +980,7 @@
                             <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                             <div class="s_hotSaleSection_Product_BtnGroup">
                                 <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                                <svg class="s_hotSaleSection_Product_HeartBtn">
+                                <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                     <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                                 </svg>
                             </div>
@@ -994,18 +993,18 @@
                             <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                             <div class="s_hotSaleSection_Product_BtnGroup">
                                 <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                                <svg class="s_hotSaleSection_Product_HeartBtn">
+                                <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                     <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                                 </svg>
                             </div>
                         </div>
 
                     </div>
-                    <div class="s_hotSaleSection_Product_more">
-                        <a href="">
+                    <a href="">
+                        <div class="s_hotSaleSection_Product_more">
                             <p>more</p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -1026,7 +1025,7 @@
                         <p class="s_hotSaleSection_Product_productPrice">NT$1000</p>
                         <div class="s_hotSaleSection_Product_BtnGroup">
                             <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                            <svg class="s_hotSaleSection_Product_HeartBtn">
+                            <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                 <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                             </svg>
                         </div>
@@ -1039,7 +1038,7 @@
                         <p class="s_hotSaleSection_Product_productPrice">NT$1000</p>
                         <div class="s_hotSaleSection_Product_BtnGroup">
                             <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                            <svg class="s_hotSaleSection_Product_HeartBtn">
+                            <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                 <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                             </svg>
                         </div>
@@ -1052,7 +1051,7 @@
                         <p class="s_hotSaleSection_Product_productPrice">NT$1000</p>
                         <div class="s_hotSaleSection_Product_BtnGroup">
                             <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                            <svg class="s_hotSaleSection_Product_HeartBtn">
+                            <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                 <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                             </svg>
                         </div>
@@ -1065,18 +1064,18 @@
                         <p class="s_hotSaleSection_Product_productPrice">NT$1000</p>
                         <div class="s_hotSaleSection_Product_BtnGroup">
                             <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                            <svg class="s_hotSaleSection_Product_HeartBtn">
+                            <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
                                 <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
                             </svg>
                         </div>
                     </div>
 
                 </div>
-                <div class="s_hotSaleSection_Product_more">
-                    <a href="">
+                <a href="">
+                    <div class="s_hotSaleSection_Product_more">
                         <p>more</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -1176,26 +1175,46 @@
                 </svg>
             </div>
             <div class="s_index_columnBtnGroup">
-                <button class="s_index_columnBlueBtn">狗狗專區</button>
-                <button class="s_index_columnBlueBtn">貓貓專區</button>
+                <button class="s_index_columnBlueBtn s_index_column_DogBtn">狗狗專區</button>
+                <button class="s_index_columnBlueBtn s_index_column_CatBtn">貓貓專區</button>
             </div>
-            <div class="s_index_column_index_dogArea">
-                <div class="s_index_column_index_dog">
-                    <img class="s_index_column_index_dog_img" src="./images/Index/column_dog01.png" alt="">
-                    <div class="s_index_column_index_dog_para">
-                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂....
+            <div class="s_index_column_Area s_index_column_DogArea">
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/column_dog01.png" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
                     </div>
                 </div>
-                <div class="s_index_column_index_dog">
-                    <img class="s_index_column_index_dog_img" src="./images/Index/column_dog02.png" alt="">
-                    <div class="s_index_column_index_dog_para">
-                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂....
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/column_dog02.png" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
                     </div>
                 </div>
-                <div class="s_index_column_index_dog">
-                    <img class="s_index_column_index_dog_img" src="./images/Index/column_dog03.png" alt="">
-                    <div class="s_index_column_index_dog_para">
-                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂....
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/column_dog03.png" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
+                    </div>
+                </div>
+            </div>
+            <div class="s_index_column_Area s_index_column_CatArea">
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/columnCat01.jpg" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
+                    </div>
+                </div>
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/columnCat02.jpg" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
+                    </div>
+                </div>
+                <div class="s_index_column_dog">
+                    <img class="s_index_column_dog_img" src="./images/Index/columnCat03.jpg" alt="">
+                    <div class="s_index_column_dog_para">
+                        大家怎摸選擇貓砂?在開始認識貓砂種類以前，闆貓要先呼籲一個普遍的貓砂挑選原則。那就是，不要買有添加大量香精的貓砂...
                     </div>
                 </div>
             </div>
@@ -1214,10 +1233,12 @@
                             ,無助的毛孩子們有了依靠，是愛爸愛媽持續支柱著浪浪們，讓愛延續、讓愛不熄滅,浪浪不再流浪
                         </div>
                     </div>
-                    <button class="s_index_donation_Intro_btn_PC">more 
-                        <svg class="s_index_donation_Intro_btn_PC_icon"> <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
-                        </svg>
-                    </button>
+                    <a href=""> <button class="s_index_donation_Intro_btn_PC">more
+                            <svg class="s_index_donation_Intro_btn_PC_icon">
+                                <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
+                            </svg>
+                        </button>
+                    </a>
                     <button class="s_index_donation_Intro_btn_ph">更多
                         <svg class="s_index_donation_Intro_btn_ph_icon">
                             <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-arrow-right"></use>
@@ -1448,7 +1469,7 @@
 
     <script src="./js/0_main/navbar/mobile/custom.js"></script>
     <script src="./js/0_main/navbar/web/custom.js"></script>
-
+    <script src="./js/index/index.js"></script>
     <script src="./js/0_main/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
@@ -1458,39 +1479,6 @@
         cellAlign: 'left',
         contain: true
     });
-
-    let navTop = $('.nav').offset().top;
-
-
-    $(window).scroll(function () {
-
-        let scrollTop = $(this).scrollTop();
-        console.log('navTop', navTop);
-        console.log('scrollTop', scrollTop);
-
-        if (scrollTop >= navTop) {
-            // nav fixed 
-            $('.nav').addClass('s_fixed');
-        }
-        else {
-            // nav unfixed 
-            $('.nav').removeClass('s_fixed');
-        }
-    })
-
-
-
-  // $(function () {
-  //   var len = 30; // 超過50個字以"..."取代
-  //   $(".s_index_column_index_dog_para").each(function (i) {
-  //     if ($(this).text().length > len) {
-  //       $(this).attr("title", $(this).text());
-  //       var text = $(this).text().substring(0, len - 1) + "...";
-  //       $(this).text(text);
-  //     }
-  //   });
-  // });
-
 
 </script>
 
