@@ -60,9 +60,21 @@
         border-radius: 0 0 10px 10px;
         height:80px;
         width: 155px;
-        padding: 30px 8px ;
-        margin: -10px 0;
+        padding: 25px 8px ;
+        margin: -10px 0;        
+        text-overflow : ellipsis; 
+        overflow : hidden; 
+        /* white-space: nowrap; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
       }
+      /* .s_index_choice_ph_icon{
+        width: 8px;
+        height: 8px;
+       fill: var(--maindarkgray);
+       margin-right: 5px;
+      } */
 /*-----------每月主打介紹--------*/
 .s_index_MonthlyEvents_intro{
 margin: 180px auto;
@@ -229,6 +241,12 @@ margin-bottom: 200px;
         margin: 10px auto;
         color: var(--maindarkgray);
         font-size: 14px;
+         text-overflow : ellipsis; 
+        overflow : hidden; 
+        /* white-space: nowrap; */
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
       }
 
 /* ------------捐贈--------- */
@@ -284,7 +302,13 @@ margin-bottom: 200px;
         font-size: 16px;
         border: 0;
         color: var(--maindarkgray);
-        margin: 10px 0 26px 130px;
+        margin: 10px 0 26px 160px;
+      }
+      .s_index_donation_Intro_btn_ph_icon{
+        width: 15px;
+        height: 15px;
+       fill: var(--maindarkgray);
+
       }
 /*----------捐贈計數----------*/
       .s_donationCount{
