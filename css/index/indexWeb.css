@@ -1,0 +1,485 @@
+     body {
+      /* font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+      background-color: #F7F4EE;     */
+      /* margin: 0 auto; */
+      /* width: 100%; */
+      /* font-weight: 200; */
+    }
+
+/* *{
+  outline: 1px orangered solid;
+} */
+    a {
+      text-decoration: none;
+      color:none;
+    }
+    a:hover {
+    text-decoration: none;
+        }
+    li {
+      list-style-type: none;
+    }
+
+ .s_fixed {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+    .s_index_columnBlueBtn:hover {
+      background-color: var(--mainblue);
+      color: #ffffff;
+      border: 0;
+    }
+
+    .s_index_column_index_dogArea {
+      display: flex;
+      justify-content: center;
+    }
+ 
+
+    @media (min-width: 500px) {
+/*----------- --標題-------------*/
+      .s_index_subtitle_PC {
+        /* display: block;*/
+        margin: 80px 0;
+        display: flex;
+  justify-content: center;
+      /* width: 610px;   */
+      }
+      
+      .s_index_subtitle_ph{
+        display: none;
+      }
+/*--------------影片區----------*/
+    
+  .s_index_videoSection_ph{
+     display: none; 
+    }
+      .s_index_videoSection_PC{
+        display: block;
+        position: relative;
+        margin: 200px auto 0;
+        width: 1335px;
+        height: 770px;
+      }
+      .s_index_videoSection_PC img{
+        position: absolute;
+        /* top: 0px;
+         left: 0px; */
+        top: -27px;
+        left: -25px;
+       /* width: 1350px; 
+         height: 950px; */
+        width: 100%;
+       height: 100%; 
+        /* z-index: 10; */
+      }
+      .s_index_video_PC{  
+       /* margin-top: 60px; */
+        -webkit-mask-image: url("../../images/index/houseCenter3.png");
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+      }
+.s_index_videoSection_doorL_PC{
+     width: 500px;
+     height: 80px;
+     position: absolute;
+     left: -75px;
+     top: 560px;
+     /* z-index: -1; */
+}
+.s_index_videoSection_doorL_PC img{
+ width: 100%;
+            height: 100%;
+            object-fit: contain;
+}
+.s_index_videoSection_doorR_PC{
+     width: 80px;
+     height:500px;
+     position: absolute;
+     right: 80px;
+     top: 50px;
+     /* z-index: -1; */
+}
+.s_index_videoSection_doorR_PC img{
+ width: 100%;
+            height: 100%;
+            object-fit: contain;
+}
+
+/* -------------主打活動---------- */
+      .s_index_MonthlyEvents{
+        margin: 150px auto 100px;
+        width: 100%;             
+      }
+      .s_index_MonthlyEvents_choiceArea_ph {
+        display: none;
+      }
+
+      .s_index_MonthlyEvents_choiceArea_PC {
+        display: block;
+        position: relative;
+      }
+
+      .s_index_choiceAreaImg_PC {
+        height: 600px;     
+        display: flex;
+      }
+
+      .s_index_choiceArea_choice_PC {
+        margin: 240px 0 0;        
+        position: absolute;       
+        right: 15%;
+        top:-50px;     
+      }
+
+      .s_index_choice_PC:hover {
+        background-color: var(--mainblue);
+      }
+
+      .s_index_choice_PC {
+        font-size: 22px;
+        line-height: 75px;
+        color: var(--maindarkgray);
+        text-indent: 60px;
+        background-color:var(--mainyellow);
+        border-radius: 36px;
+        height:75px;
+        width: 600px;
+        /* z-index: 10; */
+        margin: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .s_index_choice_PC_icon{
+        width: 10px;
+        height: 20px;
+       fill: var(--maindarkgray);
+       margin-right: 30px;
+      }
+/*--------每月主打介紹-------*/
+.s_index_MonthlyEvents_intro{
+margin: 100px auto 10px;
+width: 1000px;
+}
+.s_index_MonthlyEvents_intro_row{
+display:flex;
+flex-direction: row;
+color:var(--mainblue) ;
+}
+.s_index_MonthlyEvents_introLeft{
+  display: flex;
+  flex-direction: column; 
+  margin-top: 120px; 
+}
+.s_index_MonthlyEvents_intro_miniTitle{
+  font-size: 22px; 
+  margin: 0;
+}
+.s_index_MonthlyEvents_intro_ColumnPara{
+  font-size: 16px;
+  width: 500px;
+  margin: 0;  
+}
+.s_index_MonthlyEvents_introRight img {
+  display: inline-block;
+  width:200px;
+  margin-top: 50px;
+  /* margin-left: 30px; */
+}
+.s_index_MonthlyEvents_cat img{
+  margin-right: 3rem;
+  width:150px;
+
+}
+.s_index_right{
+  margin-left: 5rem;
+}
+.s_dogShow{
+margin: 0;
+}
+/*------------熱銷商品-------------*/
+.s_hotSaleSection_part{
+margin-bottom: 200px;
+}
+.s_hotSale_Sec_PC{
+  display: block;
+}
+.s_hotSale_Sec_ph{
+  display: none;
+}
+.s_hotSaleSection_ProductsSec{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.s_hotSaleSection_Product{
+  width: 300px;
+  height: 280px;
+  background-color:var(--mainyellow);
+  border-radius: 40px 40px 90px;
+  position: relative;
+  margin: 180px 45px 100px;  
+}
+.s_hotSaleSection_Product_img {
+  width: 250px;
+  position: absolute;
+  top: -180px;
+  left: 30px;
+}
+.s_hotSaleSection_Product_img img{
+  width: 100%;
+  height: 265px; 
+}
+.s_hotSaleSection_Product_productName{
+  font-size: 18px;
+  width: 240px;
+  /* height: 160px;  */
+  margin: 10px auto;
+  padding: 80px 5px 0;
+  text-overflow : ellipsis; 
+  overflow : hidden;  
+  display: -webkit-box; 
+   -webkit-line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+.s_hotSaleSection_Product_productPrice{
+  font-size: 18px;
+  text-align: center;
+  /* margin: 10px auto; */
+}
+.s_hotSaleSection_Product_BtnGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.s_hotSaleSection_Product_ShopBtn{
+        height: 35px;
+        width: 150px;
+        border: 0;
+        background-color: #ffffff;
+        color: var(--maindarkgray);
+        border-radius: 36px;
+        font-size: 18px;
+        cursor: pointer;
+        /* margin: 0 auto; */
+}
+.s_hotSaleSection_Product_HeartBtn{
+  fill:  var(--maingray);
+  width: 28px;
+  height: 25px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.s_heart_color{
+  fill: var(--mainpink);
+  /* transform: scale(1.2); */
+   }
+.s_hotSaleSection_Product_more{
+  color: var(--mainblue);
+  font-size: 30px;
+  text-align: center;
+  flex-direction: column;
+}
+.s_hotSale_dogCan_Sec_PC{
+    display: none;
+}
+.s_hotSale_dogSnack_Sec_PC{
+    display: none;
+}
+.s_hotSale_dogOtherProduct_Sec_PC{
+    display: none;
+}
+.s_hotSale_catCan_Sec_PC{
+    display: none;
+}
+.s_hotSale_catSnack_Sec_PC{
+    display: none;
+}
+.s_hotSale_catOtherProduct_Sec_PC{
+    display: none;
+}
+/*---------合作品牌-----*/
+.s_index_brandPartnershipSection_imageSection{
+  /* width: 1440px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.s_index_brandPartnershipSection_image{
+  margin: 0 20px;
+}
+.s_index_brandPartnershipSection_image img{  
+  width: 200px;
+}
+/* ---------------專欄------------- */
+     .s_index_column{
+      margin-top: 300px;
+     } 
+     .s_index_columnBtnGroup {
+        /* text-align: center; */
+        margin: 100px auto;
+      }
+
+      .s_index_columnBlueBtn {
+        height: 45px;
+        width: 230px;
+        border: 0;
+        background-color: #ffffff;
+        color: var(--mainblue);
+        border-radius: 36px;
+        font-size: 22px;
+        margin: 0 20px;
+        letter-spacing: 1.5px;
+         cursor: pointer;
+      }
+
+      .s_index_column_Area {
+        display: flex;
+        flex-direction: row;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .s_index_column_dog {
+        margin: 0 20px;
+      }
+
+      .s_index_column_dog_img {
+        width: 400px;
+        height: 250px;
+        border-radius: 60px;
+        object-fit: cover;
+      }
+
+      .s_index_column_dog_para {
+        /* width: 380px; */
+        /* margin: 35px auto 300px; */
+        color: var(--maindarkgray);
+        font-size: 16px;
+        text-overflow : ellipsis; 
+        overflow : hidden;     
+        display: -webkit-box; 
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+      }
+      .s_index_column_DogBtn{
+        background-color:var(--mainblue);
+        color: #ffffff;
+      }
+      .s_index_column_CatArea{
+        /* visibility: hidden; */
+        display: none;
+      }
+ .s_hotSale_dogFeed_Btn_PC{
+            background-color:var(--mainblue);
+        color: #ffffff;
+       }
+       .s_hotSale_catFeed_Btn_PC{
+            background-color:var(--mainblue);
+        color: #ffffff;
+       }
+/* ------------捐贈-------------- */
+.s_index_donation_imgIntro{  
+  width: 100%;  
+ position: relative;
+}      
+.s_index_donation_img {
+        height:auto;
+        width: 1500px;
+        margin:4rem auto 10px;      
+      }
+
+      .s_index_donation_Intro {
+        width: 500px;
+        height: 350px;
+        background-color:#70707093;
+        /* position: relative; */
+        position: absolute;
+        border-radius: 40px;
+        top:200px;
+        left: 250px;
+        /* top: -700px;
+        left: 250px; */
+        color: #F7F4EE;
+      }
+      .s_index_donation_IntroAll {
+        display:block;
+      }
+      .s_index_donation_Intro_title {
+        font-size: 45px;
+        margin: 30px 0 10px 45px;
+      }
+
+      .s_index_donation_Intro_para {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 16px;
+      }
+
+      .s_index_donation_Intro_btn_PC {
+        display: inline-block;
+        width: 151px;
+        height: 34px;
+        border-radius: 17px;
+        background-color: #ffffff;
+        font-size: 16px;
+        margin: 30px 0 0 300px;
+        border: 0;
+      }
+
+      .s_index_donation_Intro_btn_ph {
+        display: none;
+      }
+      .s_index_donation_Intro_btn_PC_icon{
+        width: 10px;
+        height: 15px;
+       fill: var(--maindarkgray);
+       margin-left: 15px;
+      }
+      
+      /*----------捐贈計數----------*/
+      .s_donationCount{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .s_donationCount_part{
+        margin: 80px 50px;
+        width: 150px;
+
+      }
+      .s_donationCount_Donate_icon{
+        fill: var(--mainpink);
+        width: 70px;
+        height: 55px;
+        margin: 20px 0;
+      }
+      .s_donationCount_para{
+        color: var(--mainpink);
+        font-size: 14px;
+      }  
+.s_donationCount_number{
+font-size: 16px;
+font-weight: 600;
+
+}
+/*--------logo-----------*/
+.s_index_bottomLogo{
+  margin: 150px auto 150px;
+  display: flex;
+  justify-content: center;
+}
+.s_index_bottomLogo_icon{
+  width: 300px;
+  height: 120px;
+}
+    }
+ 
