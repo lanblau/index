@@ -28,9 +28,143 @@ for (let h of heart) {
 
 
 
+$(".s_hotSale_dogFeed_Btn_PC").click(function () {
+    $(".s_hotSale_dogFeed_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_dogCan_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogCan_Btn_PC").click(function () {
+    $(".s_hotSale_dogCan_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_dogFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogSnack_Btn_PC").click(function () {
+    $(".s_hotSale_dogSnack_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_dogFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogCan_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogOtherProduct_Btn_PC").click(function () {
+    $(".s_hotSale_dogOtherProduct_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_dogFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_dogCan_Sec_PC").css('display', 'none');
+
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+
+
+
+$(".s_hotSale_catFeed_Btn_PC").click(function () {
+    $(".s_hotSale_catFeed_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_catCan_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catCan_Btn_PC").click(function () {
+    $(".s_hotSale_catCan_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_catFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catSnack_Btn_PC").click(function () {
+    $(".s_hotSale_catSnack_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_catFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catCan_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_PC").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catOtherProduct_Btn_PC").click(function () {
+    $(".s_hotSale_catOtherProduct_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
+    $(".s_hotSale_catFeed_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_PC").css('display', 'none');
+    $(".s_hotSale_catCan_Sec_PC").css('display', 'none');
+
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+
+
+$(".s_hotSale_dogFeed_Btn_ph").click(function () {
+    $(".s_hotSale_dogFeed_Sec_ph").css('display', 'block');
+    $(".s_hotSale_dogCan_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogCan_Btn_ph").click(function () {
+    $(".s_hotSale_dogCan_Sec_ph").css('position', 'absolute').css('left', '1500px');
+    $(".s_hotSale_dogFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogSnack_Btn_ph").click(function () {
+    $(".s_hotSale_dogSnack_Sec_ph").css('display', 'block');
+    // .css(' transform', 'translateY(100px)')
+    $(".s_hotSale_dogFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogCan_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_dogOtherProduct_Btn_ph").click(function () {
+    $(".s_hotSale_dogOtherProduct_Sec_ph").css('display', 'block');
+    $(".s_hotSale_dogFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_dogCan_Sec_ph").css('display', 'none');
+
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+
+
+
+$(".s_hotSale_catFeed_Btn_ph").click(function () {
+    $(".s_hotSale_catFeed_Sec_ph").css('display', 'block');
+    $(".s_hotSale_catCan_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catCan_Btn_ph").click(function () {
+    $(".s_hotSale_catCan_Sec_ph").css('display', 'block');
+    $(".s_hotSale_catFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catSnack_Btn_ph").click(function () {
+    $(".s_hotSale_catSnack_Sec_ph").css('display', 'block');
+    $(".s_hotSale_catFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catCan_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catOtherProduct_Sec_ph").css('display', 'none');
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+$(".s_hotSale_catOtherProduct_Btn_ph").click(function () {
+    $(".s_hotSale_catOtherProduct_Sec_ph").css('display', 'block');
+    $(".s_hotSale_catFeed_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catSnack_Sec_ph").css('display', 'none');
+    $(".s_hotSale_catCan_Sec_ph").css('display', 'none');
+
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+});
+
+
+
+
+
+
+
+
+
 $(".s_index_column_DogBtn").click(function () {
-    $(".s_index_column_DogArea").css('display','flex');
-    $(".s_index_column_CatArea").css('display', 'none');    
+    $(".s_index_column_DogArea").css('display', 'flex');
+    $(".s_index_column_CatArea").css('display', 'none');
     $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
 });
 $(".s_index_column_CatBtn").click(function () {

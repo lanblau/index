@@ -52,9 +52,14 @@
         display: none;
       }
 /*--------------影片區----------*/
+    
+  .s_index_videoSection_ph{
+     display: none; 
+    }
       .s_index_videoSection_PC{
+        display: block;
         position: relative;
-        margin: 100px auto 0;
+        margin: 200px auto 0;
         width: 1335px;
         height: 770px;
       }
@@ -105,7 +110,7 @@
 
 /* -------------主打活動---------- */
       .s_index_MonthlyEvents{
-        margin: 300px auto 100px;
+        margin: 150px auto 100px;
         width: 100%;             
       }
       .s_index_MonthlyEvents_choiceArea_ph {
@@ -154,7 +159,7 @@
        fill: var(--maindarkgray);
        margin-right: 30px;
       }
-/*------------每月主打介紹--------------*/
+/*--------每月主打介紹-------*/
 .s_index_MonthlyEvents_intro{
 margin: 100px auto 10px;
 width: 1000px;
@@ -199,6 +204,12 @@ margin: 0;
 .s_hotSaleSection_part{
 margin-bottom: 200px;
 }
+.s_hotSale_Sec_PC{
+  display: block;
+}
+.s_hotSale_Sec_ph{
+  display: none;
+}
 .s_hotSaleSection_ProductsSec{
   display: flex;
   flex-wrap: wrap;
@@ -215,14 +226,14 @@ margin-bottom: 200px;
   margin: 180px 45px 100px;  
 }
 .s_hotSaleSection_Product_img {
-  width: 260px;
+  width: 250px;
   position: absolute;
   top: -180px;
-  left: 20px;
+  left: 30px;
 }
 .s_hotSaleSection_Product_img img{
   width: 100%;
-  height: 255px; 
+  height: 265px; 
 }
 .s_hotSaleSection_Product_productName{
   font-size: 18px;
@@ -273,8 +284,26 @@ margin-bottom: 200px;
   color: var(--mainblue);
   font-size: 30px;
   text-align: center;
+  flex-direction: column;
 }
-
+.s_hotSale_dogCan_Sec_PC{
+    display: none;
+}
+.s_hotSale_dogSnack_Sec_PC{
+    display: none;
+}
+.s_hotSale_dogOtherProduct_Sec_PC{
+    display: none;
+}
+.s_hotSale_catCan_Sec_PC{
+    display: none;
+}
+.s_hotSale_catSnack_Sec_PC{
+    display: none;
+}
+.s_hotSale_catOtherProduct_Sec_PC{
+    display: none;
+}
 /*---------合作品牌-----*/
 .s_index_brandPartnershipSection_imageSection{
   /* width: 1440px; */
@@ -349,7 +378,14 @@ margin-bottom: 200px;
         /* visibility: hidden; */
         display: none;
       }
-
+ .s_hotSale_dogFeed_Btn_PC{
+            background-color:var(--mainblue);
+        color: #ffffff;
+       }
+       .s_hotSale_catFeed_Btn_PC{
+            background-color:var(--mainblue);
+        color: #ffffff;
+       }
 /* ------------捐贈-------------- */
 .s_index_donation_imgIntro{  
   width: 100%;  
