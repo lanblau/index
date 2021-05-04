@@ -26,7 +26,7 @@ for (let h of heart) {
     });
 }
 
-
+// https://www.cnblogs.com/WindrunnerMax/p/13091710.html
 
 $(".s_hotSale_dogFeed_Btn_PC").click(function () {
     $(".s_hotSale_dogFeed_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
