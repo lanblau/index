@@ -31,6 +31,11 @@
       color: #ffffff;
       border: 0;
     }
+    .s_hotSaleSection_Product_ShopBtn:hover {
+      background-color: var(--mainblue);
+      color: #ffffff;
+      border: 0;
+    }
 
     .s_index_column_index_dogArea {
       display: flex;
@@ -218,29 +223,31 @@ margin-bottom: 200px;
 }
 
 .s_hotSaleSection_Product{
-  width: 300px;
-  height: 280px;
+  width: 270px;
+  height: 250px;
   background-color:var(--mainyellow);
   border-radius: 40px 40px 90px;
   position: relative;
-  margin: 180px 45px 100px;  
+  margin: 180px 30px 100px;  
 }
 .s_hotSaleSection_Product_img {
-  width: 250px;
+  width: 220px;
+  height: 220px; 
   position: absolute;
-  top: -180px;
-  left: 30px;
+  top: -160px;
+  left: 25px;
+
 }
 .s_hotSaleSection_Product_img img{
   width: 100%;
-  height: 265px; 
-}
+  height: 100%; 
+ }
 .s_hotSaleSection_Product_productName{
   font-size: 18px;
   width: 240px;
   /* height: 160px;  */
-  margin: 10px auto;
-  padding: 80px 5px 0;
+  margin: 0 auto;
+  padding: 80px 0 0;
   text-overflow : ellipsis; 
   overflow : hidden;  
   display: -webkit-box; 
@@ -250,7 +257,7 @@ margin-bottom: 200px;
 .s_hotSaleSection_Product_productPrice{
   font-size: 18px;
   text-align: center;
-  /* margin: 10px auto; */
+  margin: 10px auto;
 }
 .s_hotSaleSection_Product_BtnGroup{
   display: flex;
@@ -313,10 +320,13 @@ margin-bottom: 200px;
   align-items: center;
 }
 .s_index_brandPartnershipSection_image{
-  margin: 0 20px;
+  margin: 0 25px;
+  width: 200px;
+
 }
 .s_index_brandPartnershipSection_image img{  
-  width: 200px;
+  width: 100%;
+  height: 100%;
 }
 /* ---------------專欄------------- */
      .s_index_column{

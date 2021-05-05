@@ -23,12 +23,14 @@
         .s_index_videoSection_ph{
         display: block;
         position: relative;
-        margin: 50px 0 0 -30px ;
-        /* margin: 50px auto 0; */
+        /* margin: 50px 0 0 -30px ; */
+        margin: 60px auto 0;
         /* width: 300px;
         height: 425px; */
-        padding-bottom:133%;
-        padding-top: 35px;        
+        padding-bottom:169%;
+        /* padding-bottom:133%; */
+        padding-top: 35px; 
+/* padding-left: 100px; */
         height: 0;
         /* width: 100%; */
         overflow: hidden;
@@ -37,7 +39,7 @@
        /* margin-top: 60px; */
        position: absolute;
         top:0;
-        left: 0;
+        left: 0px;
         width: 100%;
         height: 100%;      
       }
@@ -45,8 +47,8 @@
      width: 300px;
      height: 50px;
      position: absolute;
-     left: 0px;
-     top: 380px;
+     left: -10px;
+     top: 480px;
      /* z-index: -1; */
 }
 .s_index_videoSection_doorL_ph img{
@@ -58,7 +60,7 @@
      width: 50px;
      height:300px;
      position: absolute;
-     right: 10px;
+     right: 15px;
      top: 40px;
      /* z-index: -1; */
 }
@@ -209,32 +211,33 @@
         }
 
         .s_hotSaleSection_Product {
-            width: 180px;
-            height: 170px;
+            width: 170px;
+            height: 160px;
             background-color: var(--mainyellow);
-            border-radius: 35px 35px 65px;
+            border-radius: 30px 30px 60px;
             position: relative;
             margin: 100px 20px 80px;
         }
 
         .s_hotSaleSection_Product_img {
-            width: 200px;
+            width: 140px;
+            height: 170px;
             position: absolute;
             top: -140px;
-            left: -5px;
+            left: 17px;
         }
 
         .s_hotSaleSection_Product_img img {
             width: 100%;
-            height: 170px;
+            height: 100%;
             object-fit: contain;
         }
 
         .s_hotSaleSection_Product_productName {
             font-size: 14px;
-            width: 190px;
-            margin: 5px auto;
-            padding: 35px 20px 0;
+            width: 150px;
+            margin: 0 auto;
+            padding: 35px 0 0;
             text-overflow: ellipsis;
             overflow: hidden;
             display: -webkit-box;
@@ -245,6 +248,7 @@
         .s_hotSaleSection_Product_productPrice {
             font-size: 14px;
             text-align: center;
+            margin: 5px auto;
         }
 
         .s_hotSaleSection_Product_BtnGroup {
