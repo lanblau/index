@@ -1,6 +1,7 @@
         /* *{
    outline: solid 1px  rgb(247, 95, 40);
 } */
+
         @media (min-width:300px) {
 
             /*-------標題----------*/
@@ -287,24 +288,30 @@
       
 .s_hotSale_dogCan_Sec_ph{
     /* display: none; */
-/* transform: translateX(-400px); */
-position: absolute;
-left: -1000px;
+transform: translateX(-400px);
+/* position: absolute;
+left: -1000px; */
 /* opacity: 0; */
 }
 .s_hotSale_dogSnack_Sec_ph{
+transform: translateX(-400px);
     display: none;
+    
 }
 .s_hotSale_dogOtherProduct_Sec_ph{
+transform: translateX(-400px);
     display: none;
 }
 .s_hotSale_catCan_Sec_ph{
+transform: translateX(-400px);
     display: none;
 }
 .s_hotSale_catSnack_Sec_ph{
+transform: translateX(-400px);
     display: none;
 }
 .s_hotSale_catOtherProduct_Sec_ph{
+transform: translateX(-400px);
     display: none;
 }
 

@@ -89,7 +89,7 @@ $(".s_hotSale_catOtherProduct_Btn_PC").click(function () {
 
     $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
 });
-
+// ---------手機板 狗------------
 
 $(".s_hotSale_dogFeed_Btn_ph").click(function () {
     $(".s_hotSale_dogFeed_Sec_ph").css('display', 'block');
@@ -99,13 +99,18 @@ $(".s_hotSale_dogFeed_Btn_ph").click(function () {
     $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
 });
 $(".s_hotSale_dogCan_Btn_ph").click(function () {
-    $(".s_hotSale_dogCan_Sec_ph").css('position', 'absolute').css('left', '1500px');
+    $(".s_hotSale_dogCan_Sec_ph").show();
+    $(".s_hotSale_dogCan_Sec_ph").css(' height', '350px');
+    // $(".s_hotSale_dogCan_Sec_ph").css('transform', 'translateX(0px)');
+    // $(".s_hotSale_dogCan_Sec_ph").css('left', '0px');
     $(".s_hotSale_dogFeed_Sec_ph").css('display', 'none');
     $(".s_hotSale_dogSnack_Sec_ph").css('display', 'none');
     $(".s_hotSale_dogOtherProduct_Sec_ph").css('display', 'none');
     $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
 });
 $(".s_hotSale_dogSnack_Btn_ph").click(function () {
+    $(".s_hotSale_dogCan_Sec_ph").show();
+
     $(".s_hotSale_dogSnack_Sec_ph").css('display', 'block');
     // .css(' transform', 'translateY(100px)')
     $(".s_hotSale_dogFeed_Sec_ph").css('display', 'none');
@@ -123,6 +128,7 @@ $(".s_hotSale_dogOtherProduct_Btn_ph").click(function () {
 });
 
 
+// ---------手機板貓貓貓------------
 
 $(".s_hotSale_catFeed_Btn_ph").click(function () {
     $(".s_hotSale_catFeed_Sec_ph").css('display', 'block');
