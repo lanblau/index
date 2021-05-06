@@ -40,16 +40,6 @@
             background: #EEE;
         } */
 
-        .carousel-cell {
-            width: 47%;
-            height: 350px;
-            margin-top: 50px;
-            margin-right: 10px;
-            /* background: #8C8; */
-            border-radius: 5px;
-            counter-increment: carousel-cell;
-        }
-
         /* cell number */
         /* .carousel-cell:before {
             display: block;
@@ -59,6 +49,21 @@
             font-size: 80px;
             color: white;
         } */
+        /*----------熱銷商品-------------*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-cell {
+            width: 47%;
+            height: 350px;
+            margin-top: 100px;
+            margin-right: 10px;
+            /* background: #8C8; */
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
 
         .flickity-page-dots {
             display: none;
@@ -75,6 +80,8 @@
 
         .s_hotSale_Sec_ph {
             display: block;
+            margin: 50px 0;
+            overflow: hidden;
         }
 
         .s_hotSaleSection_Product {
@@ -146,11 +153,33 @@
             /* transform: scale(1.2); */
         }
 
-        .s_hotSaleSection_Product_more {
-            color: var(--mainblue);
-            font-size: 24px;
-            text-align: center;
+        .s_btnMargin {
+            margin: 10px;
         }
+
+        .s_hotSale_dogCan_Sec_ph {
+            /* display: none; */
+            /* transform: translateX(-400px); */
+            /* position: absolute;
+left: -1000px; */
+            /* opacity: 0; */
+        }
+
+        /* .s_hotSale_dogSnack_Sec_ph{
+    display: none;
+}
+.s_hotSale_dogOtherProduct_Sec_ph{
+    display: none;
+}
+.s_hotSale_catCan_Sec_ph{
+    display: none;
+}
+.s_hotSale_catSnack_Sec_ph{
+    display: none;
+}
+.s_hotSale_catOtherProduct_Sec_ph{
+    display: none;
+} */
     </style>
 </head>
 
@@ -162,7 +191,7 @@
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_8_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_8_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Hills 希爾思犬用處方飼料 z/d 皮膚/食物敏感狗飼料 1.5KG 小顆粒
                         改善皮膚問題
@@ -171,50 +200,51 @@
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_9_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_9_feed.png" alt="">
                     </div>
-                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 i/d Low Fat 低脂消化 1.5KG 處方 狗飼料
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 i/d Low Fat 低脂消化 1.5KG 處方
+                        狗飼料
                     </p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1122</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_Farmina_31_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_Farmina_31_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Farmina 法米納獸醫寵愛天然處方系列-犬用關節配方 2kg</p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_Farmina_32_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_Farmina_32_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Farmina 法米納獸醫寵愛天然處方系列-犬用血糖管理配方 2kg</p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
@@ -225,63 +255,64 @@
     <div class="s_hotSale_Sec_ph s_hotSale_dogCan_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -289,138 +320,139 @@
     <div class="s_hotSale_Sec_ph s_hotSale_dogSnack_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
-    
+
     <div class="s_hotSale_Sec_ph s_hotSale_dogOtherProduct_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
 
 
-    
     <div class="s_hotSale_Sec_ph s_hotSale_catFeed_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_8_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_8_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Hills 希爾思犬用處方飼料 z/d 皮膚/食物敏感狗飼料 1.5KG 小顆粒
                         改善皮膚問題
@@ -429,50 +461,51 @@
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_9_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_9_feed.png" alt="">
                     </div>
-                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 i/d Low Fat 低脂消化 1.5KG 處方 狗飼料
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 i/d Low Fat 低脂消化 1.5KG 處方
+                        狗飼料
                     </p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1122</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_Farmina_31_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_Farmina_31_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Farmina 法米納獸醫寵愛天然處方系列-犬用關節配方 2kg</p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
             </div>
             <div class="carousel-cell">
                 <div class="s_hotSaleSection_Product">
-                    <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_Farmina_32_feed.png" alt="">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_Farmina_32_feed.png" alt="">
                     </div>
                     <p class="s_hotSaleSection_Product_productName">Farmina 法米納獸醫寵愛天然處方系列-犬用血糖管理配方 2kg</p>
                     <p class="s_hotSaleSection_Product_productPrice">NT$1130</p>
                     <div class="s_hotSaleSection_Product_BtnGroup">
                         <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
                         <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                            <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
                 </div>
@@ -483,63 +516,64 @@
     <div class="s_hotSale_Sec_ph s_hotSale_catCan_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -547,63 +581,64 @@
     <div class="s_hotSale_Sec_ph s_hotSale_catSnack_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -611,68 +646,67 @@
     <div class="s_hotSale_Sec_ph s_hotSale_catOtherProduct_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_7_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_7_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 K/D 狗Kd 罐頭 370g 腎臟護理
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$140</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_15_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_15_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">Hills 希爾思 犬用 皮膚/食物敏感 犬用z/d™罐頭 156g
-                </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$87</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
             <div class="carousel-cell">
-            <div class="s_hotSaleSection_Product">
-                <div class="s_hotSaleSection_Product_img"><img src="./images/Index/dog_hills_21_can.png" alt="">
+                <div class="s_hotSaleSection_Product">
+                    <div class="s_hotSaleSection_Product_img"><img src="./images/index/dog_hills_21_can.png" alt="">
+                    </div>
+                    <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg
+                    </p>
+                    <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
+                    <div class="s_hotSaleSection_Product_BtnGroup">
+                        <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
+                        <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
+                        </svg>
+                    </div>
                 </div>
-                <p class="s_hotSaleSection_Product_productName">希爾思 Hills 罐頭 腎臟護理 Kd 雞肉燉蔬菜罐頭 0.354kg </p>
-                <p class="s_hotSaleSection_Product_productPrice">NT$204</p>
-                <div class="s_hotSaleSection_Product_BtnGroup">
-                    <button class="s_hotSaleSection_Product_ShopBtn">加入購物車</button>
-                    <svg class="s_hotSaleSection_Product_HeartBtn s_heart-button">
-                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#icon-heart"></use>
-                    </svg>
-                </div>
-            </div>
             </div>
         </div>
     </div>
-
-    
 
 
 
@@ -684,16 +718,16 @@
     <div class="s_hotSale_Sec_ph s_hotSale_dogCan_Sec_ph">
         <div class="carousel" data-flickity='{ "freeScroll": true,"wrapAround": true ,"groupCells": 2}'>
             <div class="carousel-cell">
-               
+
             </div>
             <div class="carousel-cell">
-               
+
             </div>
             <div class="carousel-cell">
-                
+
             </div>
             <div class="carousel-cell">
-               
+
             </div>
         </div>
     </div>
