@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        /* *{
+  outline: 1px orangered solid;
+} */
+        :root {
+            --mainblue: #89A7C2;
+            --mainpink: #FF9A9A;
+            --mainyellow: #F9DD83;
+            --maingray: #CCCCCC;
+            --maindarkgray: #707070;
+
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+            background-color: #F7F4EE;
+            /* margin: 0 auto; */
+            width: 100%;
+            font-weight: 200;
+        }
+
+        a {
+            text-decoration: none;
+            color: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .s_fixed {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .s_index_columnBlueBtn:hover {
+            background-color: var(--mainblue);
+            color: #ffffff;
+            border: 0;
+        }
+
+        .s_hotSaleSection_Product_ShopBtn:hover {
+            background-color: var(--mainblue);
+            color: #ffffff;
+            border: 0;
+        }
+
+        .s_index_column_index_dogArea {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        /* 一個顯示框 */
+        .wrap {
+            max-width: 800px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        /* 全部圖位置 */
+        .img-wrap {
+            width: 4000px;
+            height: 400px;
+            position: absolute;
+            /* left: -1600px; */
+            transition: .5s;
+        }
+
+        /* 用li寫死父層寬 就可以讓後面圖不顯示出來 .img-wrap img{object-fit:改適合的}*/
+        .img-wrap li {
+            width: 800px;
+        }
+
+        /* 每張圖顯示方式 */
+        .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 全部點的位置 */
+        .slider-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            list-style-type: none;
+            display: flex;
+            /* justify-content: center; */
+            /* 置中於父層100%寬 */
+            /* width: 100%; */
+            /* 設寬跟父層一樣大 */
+        }
+
+        /* 每個點的大小樣式 */
+        .slider-dots li {
+            width: 25px;
+            height: 1px;
+            /* border-radius: 50%; */
+            margin: 0 5px;
+            /* border: 1px solid #fff; */
+            background-color: rgba(191, 255, 255, 0.712);
+
+        }
+
+        /* ------------主打活動---------- */
+        .s_index_MonthlyEvents {
+            margin: 150px auto 100px;
+            width: 100%;
+        }
+
+        .s_index_MonthlyEvents_choiceArea_ph {
+            display: none;
+        }
+
+        .s_index_MonthlyEvents_choiceArea_PC {
+            display: block;
+            position: relative;
+        }
+
+        .s_index_choiceAreaImg_PC {
+            height: 600px;
+            width: 1200px;
+            display: flex;
+        }
+
+        .s_index_choiceAreaImg_PC {
+            height: 100%;
+            width: 100%;
+        }
+
+        .s_index_choiceArea_choice_PC {
+            margin: 240px 0 0;
+            position: absolute;
+            right: 1%;
+            top: -50px;
+        }
+
+        .s_index_choice_PC:hover {
+            background-color: var(--mainblue);
+            color: #ffffff;
+        }
+
+        .s_index_choice_PC svg:hover {
+            fill: #ffffff;
+        }
+
+        .s_index_choice_PC {
+            font-size: 22px;
+            line-height: 75px;
+            color: var(--maindarkgray);
+            text-indent: 60px;
+            background-color: var(--mainyellow);
+            border-radius: 36px;
+            height: 75px;
+            width: 600px;
+            /* z-index: 10; */
+            margin: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .s_index_choice_PC_icon {
+            width: 10px;
+            height: 20px;
+            fill: var(--maindarkgray);
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="list-unstyled d-flex img-wrap">
+            <li><img src="./imgs/slide1.jpg" alt=""></li>
+            <li><img src="./imgs/slide2.jpg" alt=""></li>
+            <li><img src="./imgs/slide3.jpg" alt=""></li>
+            <li><img src="./imgs/slide4.jpg" alt=""></li>
+            <li><img src="./imgs/slide5.jpg" alt=""></li>
+        </ul>
+        <ul class="slider-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <ul class="list-unstyled d-flex img-wrap">
+            <li><img src="./imgs/slide1.jpg" alt=""></li>
+            <li><img src="./imgs/slide2.jpg" alt=""></li>
+            <li><img src="./imgs/slide3.jpg" alt=""></li>
+            <li><img src="./imgs/slide4.jpg" alt=""></li>
+            <li><img src="./imgs/slide5.jpg" alt=""></li>
+        </ul>
+        <ul class="slider-dots">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="s_index_MonthlyEvents_choiceArea_PC">
+        <div class="s_index_choiceAreaImg_PC">
+            <img src="./images/index/MonthlyEvent/summerCat_PC.png" alt="">
+            <!-- <img src="./images/index/MonthlyEvent/summerDog_PC.png" alt=""> -->
+            <!-- <img src="./images/index/MonthlyEvent/slaveCat_PC.png" alt=""> -->
+            <!-- <img src="./images/index/MonthlyEvent/naturalCat_PC.png" alt=""> -->
+        </div>
+        <div class="s_index_choiceArea_choice_PC">
+            <a href="">
+                <div class="s_index_choice_PC">犬貓飼料不限品項2件85折
+                    <svg class="s_index_choice_PC_icon">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="s_index_choice_PC">購買質感貓咪睡床贈送幼犬或幼貓小玩具
+                    <svg class="s_index_choice_PC_icon">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="s_index_choice_PC">管理體重點心系列全面打9折<svg class="s_index_choice_PC_icon">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
+                    </svg></div>
+            </a>
+            <a href="">
+                <div class="s_index_choice_PC">
+                    美國直送保健食品滿2千折百
+                    <svg class="s_index_choice_PC_icon">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        // 宣告一個變數來儲存現在的頁數
+        // 作用域 Scope 全域變數
+        // 初始值為零
+        let page = 0;
+        // $('.slider-dots li').eq(page).css('background', '#fff').siblings().css('background', ' rgba(191, 255, 255, 0.712)');
+
+        $('.slider-dots li').hover(
+            function () {
+                // page=('.slider-dots li').hover的第幾項
+                page = $(this).index();
+
+                // console.log('hi', $(this));
+                // .index()取得目前符合條件的選擇器是第幾個
+                // console.log($(this).index());
+
+                // ('.slider-dots li').hover後,.siblings()其他物件回復原本顏色
+                $(this).css('background', '#fff').siblings().css('background', ' rgba(191, 255, 255, 0.712)');
+
+                // .siblings()其他物件回復透明transparent,或none
+                // $(this).css('background', '#fff').siblings().css('background', 'transparent');
+
+                // $(this) 代名詞 = 被 hover 的 li=('.slider-dots li').hover這個狀態function
+
+                // 'px'是字串, $(this).index()是hover到第幾項
+                $('.img-wrap').css('left', $(this).index() * -800 + 'px');
+            })
+        // js es6 的 Function 寫法, 俗稱箭頭函式  setInterval(() => {}, interval);
+        // 每三秒 page = page + 1
+        setInterval(() => {
+            page = page + 1;
+
+            //  if(page>4){ page=0; }
+            if (page >= 5) { page = 0; }
+
+            $('.img-wrap').css('left', page * -800 + 'px');
+            // console.log('page = ', page);
+
+            $('.slider-dots li').eq(page).css('background', '#fff').siblings().css('background', ' rgba(191, 255, 255, 0.712)');
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>

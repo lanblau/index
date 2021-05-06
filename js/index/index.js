@@ -158,7 +158,10 @@ $(".s_hotSale_catOtherProduct_Btn_ph").click(function () {
     $(".s_hotSale_catSnack_Sec_ph").css('display', 'none');
     $(".s_hotSale_catCan_Sec_ph").css('display', 'none');
 
-    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)')
+    $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('background-color', '#ffffff').css('color', 'var(--mainblue)');
+    // $(this).siblings().hover(function () {
+    //     $(this).siblings().css('background-color', 'var(--mainblue)').css('color', '#ffffff');
+    // });
 });
 
 
