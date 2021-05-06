@@ -131,7 +131,9 @@
         height: 600px;     
         display: flex;
       }
-
+.s_index_choiceAreaImg_PC{
+  /* height: 100%; */
+}
       .s_index_choiceArea_choice_PC {
         margin: 240px 0 0;        
         position: absolute;       
@@ -245,7 +247,7 @@ margin-bottom: 200px;
 .s_hotSaleSection_Product_productName{
   font-size: 18px;
   width: 240px;
-  /* height: 160px;  */
+  height: 135px; 
   margin: 0 auto;
   padding: 80px 0 0;
   text-overflow : ellipsis; 
