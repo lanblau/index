@@ -1,6 +1,6 @@
-        /* *{
+        *{
    outline: solid 1px  rgb(247, 95, 40);
-} */
+}
 
         @media (min-width:300px) {
 
@@ -71,10 +71,10 @@
     object-fit: contain;
 }  
 /*-----------本月主打----------*/
-   .s_index_MonthlyEvents {
-    margin: 100px auto;
-  width: 360px;
-  }
+            .s_index_MonthlyEvents {
+                margin: 100px auto;
+            width: 360px;
+            }
 
             .s_index_MonthlyEvents_choiceArea_PC {
                 display: none;
@@ -101,12 +101,19 @@
             }
 
             .s_index_choiceAreaImg_ph {
-                /* height:155px; */
+                height:155px;
                 width: 155px;
-                border-radius: 10px 10px 0 0;
+
+                /* border-radius: 10px 10px 0 0; */
                 margin: 0;
             }
-
+            .s_index_choiceAreaImg_ph img{
+                height: 100%;
+                width: 100%;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+            object-position:center;
+            }
             .s_index_choice_ph {
                 font-size: 14px;
                 color: var(--maindarkgray);
@@ -184,7 +191,7 @@
 
         .s_hotSale_Sec_ph {
             /* display: block; */
-   display: flex;
+             display: flex;
             /* margin: 50px 0; */
             /* overflow: hidden;     */
         }
@@ -358,6 +365,8 @@ left: -1000px; */
                 display: flex;
                 flex-direction: column;
                 margin: 0 0 100px;
+                align-content: center;
+                justify-content: center;
             }
 
             .s_index_column_dog {
@@ -367,10 +376,14 @@ left: -1000px; */
             .s_index_column_dog_img {
                 width: 300px;
                 height: 180px;
-                border-radius: 20px;
                 object-fit: cover;
+                margin: 0 auto;
             }
-
+            .s_index_column_dog_img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            }
             .s_index_column_dog_para {
                 width: 300px;
                 margin: 10px auto;

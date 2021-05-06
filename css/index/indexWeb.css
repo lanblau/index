@@ -128,23 +128,28 @@
       }
 
       .s_index_choiceAreaImg_PC {
-        height: 600px;     
+        height: 600px;
+        width: 1200px;     
         display: flex;
       }
 .s_index_choiceAreaImg_PC{
-  /* height: 100%; */
+  height: 100%;
+  width: 100%;
 }
       .s_index_choiceArea_choice_PC {
         margin: 240px 0 0;        
         position: absolute;       
-        right: 15%;
+        right: 1%;
         top:-50px;     
       }
 
       .s_index_choice_PC:hover {
         background-color: var(--mainblue);
+      color: #ffffff;
       }
-
+.s_index_choice_PC svg:hover{
+fill:#ffffff;
+}
       .s_index_choice_PC {
         font-size: 22px;
         line-height: 75px;
@@ -207,7 +212,7 @@ color:var(--mainblue) ;
 .s_dogShow{
 margin: 0;
 }
-/*------------熱銷商品-------------*/
+/*----------熱銷商品-------------*/
 .s_hotSaleSection_part{
 margin-bottom: 200px;
 }
