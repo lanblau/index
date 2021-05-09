@@ -139,7 +139,7 @@
       .s_index_choiceArea_choice_PC {
         margin: 240px 0 0;        
         position: absolute;       
-        right: 1%;
+        right: 3%;
         top:-50px;     
       }
 
@@ -147,23 +147,24 @@
         background-color: var(--mainblue);
       color: #ffffff;
       }
-.s_index_choice_PC svg:hover{
-fill:#ffffff;
-}
+      .s_index_choice_PC svg:hover{
+      fill:#ffffff;
+      }
       .s_index_choice_PC {
-        font-size: 22px;
-        line-height: 75px;
+        font-size: 20px;
+        line-height: 55px;
         color: var(--maindarkgray);
         text-indent: 60px;
         background-color:var(--mainyellow);
         border-radius: 36px;
-        height:75px;
-        width: 600px;
+        height:55px;
+        width: 450px;
         /* z-index: 10; */
         margin: 16px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #fff;
       }
       .s_index_choice_PC_icon{
         width: 10px;
@@ -212,6 +213,26 @@ color:var(--mainblue) ;
 .s_dogShow{
 margin: 0;
 }
+
+.c_dogFeed01,
+.c_dogFeed02 {
+  position: absolute;
+  max-width: 70px;
+
+  opacity: 1;
+}
+.c_dogFeed01 {
+  bottom: 50px;
+  left: 165px;
+  transition: 1.5s;
+}
+.c_dogFeed02 {
+  bottom: 50px;
+  right: 45px;
+  transition: 1s;
+}
+
+
 /*----------熱銷商品-------------*/
 .s_hotSaleSection_part{
 margin-bottom: 200px;

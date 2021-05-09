@@ -17,6 +17,34 @@
 //     }
 // })
 
+// --------------狗狗食物動畫---------------
+
+$(window).scroll(function () {
+    console.log('scollTop', $(this).scrollTop());
+
+    let windowScrollTop = $(this).scrollTop();
+
+    if (windowScrollTop > 560) {
+        $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
+    } else {
+        $(".c_dogFeed01")
+            .css("opacity", "0")
+            .css("transform", "translateY(-120px)");
+    }
+
+    if (windowScrollTop > 750) {
+        $(".c_dogFeed02").css("opacity", "1").css("transform", "translateY(0px)");
+    } else {
+        $(".c_dogFeed02")
+            .css("opacity", "0")
+            .css("transform", "translateY(-150px)");
+    }
+});
+
+
+
+
+//-----------------點愛心換色-----------------
 let heart = document.getElementsByClassName('s_heart-button')
 for (let h of heart) {
     h.addEventListener("click", function (e) {
@@ -26,8 +54,7 @@ for (let h of heart) {
     });
 }
 
-// https://www.cnblogs.com/WindrunnerMax/p/13091710.html
-
+//------------熱門商品切換-----------
 $(".s_hotSale_dogFeed_Btn_PC").click(function () {
     $(".s_hotSale_dogFeed_Sec_PC").css('display', 'flex').css('flex-direction', 'column');
     $(".s_hotSale_dogCan_Sec_PC").css('display', 'none');
