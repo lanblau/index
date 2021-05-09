@@ -31,7 +31,7 @@
 
         a {
             text-decoration: none;
-            color: none;
+            color: unset;
         }
 
         a:hover {
@@ -42,12 +42,6 @@
             list-style-type: none;
         }
 
-        .s_fixed {
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-        }
 
         .s_index_columnBlueBtn:hover {
             background-color: var(--mainblue);
@@ -68,6 +62,63 @@
 
 
 
+
+
+        /* 全部點的位置 */
+        /* .slider-dots {
+            margin: 240px 0 0;
+            position: absolute;
+            right: 3%;
+            top: -50px; */
+        /* position: absolute;
+            bottom: 0;
+            left: 0; */
+        /* list-style-type: none; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* 置中於父層100%寬 */
+        /* width: 100%; */
+        /* 設寬跟父層一樣大 */
+        /* } */
+
+        /* 每個點的大小樣式 */
+        /* .slider-dots li {
+            width: 25px;
+            height: 1px; */
+        /* border-radius: 50%; */
+        /* margin: 0 5px; */
+        /* border: 1px solid #fff; */
+        /* background-color: rgba(191, 255, 255, 0.712); */
+
+        /* } */
+
+        /* ------------主打活動---------- */
+        .s_index_MonthlyEvents {
+            margin: 150px auto 100px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .s_index_MonthlyEvents_choiceArea_ph {
+            display: none;
+        }
+
+        /* .s_index_MonthlyEvents_choiceArea_PC { */
+        /* display: block; */
+        /* position: relative; */
+        /* } */
+
+        /* .s_index_choiceAreaImg_PC {
+            height: 600px;
+            width: 1200px;
+            display: flex;
+        } */
+
+        /* .s_index_choiceAreaImg_PC {
+            height: 100%;
+            width: 100%;
+        } */
         /* 一個顯示框 */
         .s_index_MonthlyEvents_choiceArea_PC {
             max-width: 1200px;
@@ -75,6 +126,8 @@
             overflow: hidden;
             position: relative;
             /* margin: 0 auto; */
+            display: flex;
+            flex-direction: row;
         }
 
         /* 全部圖位置 */
@@ -98,66 +151,12 @@
             object-fit: contain;
         }
 
-        /* 全部點的位置 */
-        /* .slider-dots {
-            margin: 240px 0 0;
-            position: absolute;
-            right: 3%;
-            top: -50px; */
-            /* position: absolute;
-            bottom: 0;
-            left: 0; */
-            /* list-style-type: none; */
-            /* display: flex; */
-            /* justify-content: center; */
-            /* 置中於父層100%寬 */
-            /* width: 100%; */
-            /* 設寬跟父層一樣大 */
-        /* } */
-
-        /* 每個點的大小樣式 */
-        /* .slider-dots li {
-            width: 25px;
-            height: 1px; */
-        /* border-radius: 50%; */
-        /* margin: 0 5px; */
-        /* border: 1px solid #fff; */
-        /* background-color: rgba(191, 255, 255, 0.712); */
-
-        /* } */
-
-        /* ------------主打活動---------- */
-        .s_index_MonthlyEvents {
-            margin: 150px auto 100px;
-            width: 100%;
-        }
-
-        .s_index_MonthlyEvents_choiceArea_ph {
-            display: none;
-        }
-
-        .s_index_MonthlyEvents_choiceArea_PC {
-            display: block;
-            position: relative;
-        }
-
-        /* .s_index_choiceAreaImg_PC {
-            height: 600px;
-            width: 1200px;
-            display: flex;
-        } */
-
-        /* .s_index_choiceAreaImg_PC {
-            height: 100%;
-            width: 100%;
-        } */
-
         .s_index_choiceArea_choice_PC {
-            margin: 240px 0 0;
+            /* margin: 240px 0 0; */
             position: absolute;
-            right: 1%;
-            /* right: 3%; */
-            top: -50px;
+            /* right: -10%; */
+            right: 18%;
+            top: 190px;
         }
 
         /* .s_index_choice_PC:hover {
@@ -180,11 +179,21 @@
             width: 450px;
             /* z-index: 10; */
             margin: 16px 0;
+
+        }
+
+        .s_index_choice_PC {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        /* .slider-dots li svg {
+            width: 10px;
+            height: 20px;
+            fill: var(--maindarkgray);
+            margin-right: 30px;
+        } */
         .s_index_choice_PC_icon {
             width: 10px;
             height: 20px;
@@ -211,37 +220,38 @@
             <li></li>
         </ul>
     </div> -->
-
-    <div class="s_index_MonthlyEvents_choiceArea_PC">
-        <div class="s_index_choiceAreaImg_PC">
-            <ul class="list-unstyled d-flex img-wrap">
-                <li><img src="./images/index/MonthlyEvent/summerCat_PC.png" alt=""></li>
-                <li><img src="./images/index/MonthlyEvent/summerDog_PC.png" alt=""></li>
-                <li><img src="./images/index/MonthlyEvent/slaveCat_PC.png" alt=""></li>
-                <li><img src="./images/index/MonthlyEvent/naturalCat_PC.png" alt=""></li>
-            </ul>
+    <div class="s_index_MonthlyEvents">
+        <div class="s_index_MonthlyEvents_choiceArea_PC">
+            <div class="s_index_choiceAreaImg_PC">
+                <ul class="list-unstyled d-flex img-wrap">
+                    <li><img src="./images/index/MonthlyEvent/summerCat_PC.png" alt=""></li>
+                    <li><img src="./images/index/MonthlyEvent/summerDog_PC.png" alt=""></li>
+                    <li><img src="./images/index/MonthlyEvent/tofuCat_PC.png" alt=""></li>
+                    <li><img src="./images/index/MonthlyEvent/slaveCat_PC.png" alt=""></li>
+                </ul>
+            </div>
         </div>
         <div class="s_index_choiceArea_choice_PC">
             <ul class="slider-dots">
-                
-                    <a href=""><li>
+                <li>
+                    <a href="">
                         <div class="s_index_choice_PC">犬貓飼料不限品項2件85折
                             <svg class="s_index_choice_PC_icon">
                                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
                             </svg>
-                        </div></li>
+                        </div>
                     </a>
-                
-                
-                    <a href=""><li> 
+                </li>
+                <li>
+                    <a href="">
                         <div class="s_index_choice_PC">購買質感貓咪睡床贈送小玩具
                             <svg class="s_index_choice_PC_icon">
                                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
                             </svg>
-                        </div></li>
+                        </div>
                     </a>
-                
-                <li> 
+                </li>
+                <li>
                     <a href="">
                         <div class="s_index_choice_PC">管理體重點心系列全面打9折<svg class="s_index_choice_PC_icon">
                                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-arrow-forward"></use>
@@ -260,8 +270,8 @@
                     </a>
                 </li>
         </div>
-
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
@@ -282,7 +292,10 @@
                 // console.log($(this).index());
 
                 // ('.slider-dots li').hover後,.siblings()其他物件回復原本顏色
-                 $(this).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+                $(this).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+                // $(this).find('.s_index_choice_PC_icon').css('fill', '#ffffff');
+                // $(this).siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
+
 
                 // .siblings()其他物件回復透明transparent,或none
                 // $(this).css('background', '#fff').siblings().css('background', 'transparent');
@@ -297,13 +310,15 @@
         setInterval(() => {
             page = page + 1;
 
-            //  if(page>4){ page=0; }
             if (page >= 4) { page = 0; }
 
             $('.img-wrap').css('left', page * -1200 + 'px');
             // console.log('page = ', page);
 
-            $('.slider-dots li').eq(page).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');             
+            $('.slider-dots li').eq(page).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+            // $('.slider - dots li').find('.s_index_choice_PC_icon').css('fill', '#ffffff').siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
+            // $('.slider-dots li').find('.s_index_choice_PC_icon').css('fill', '#ffffff');
+            // $('.slider-dots li').siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
         }, 3000);
 
     </script>

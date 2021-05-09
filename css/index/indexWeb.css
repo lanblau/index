@@ -11,7 +11,8 @@
 } */
     a {
       text-decoration: none;
-      color:none;
+      color: unset;
+     
     }
     a:hover {
     text-decoration: none;
@@ -20,12 +21,12 @@
       list-style-type: none;
     }
 
- .s_fixed {
+ /* .s_fixed {
             position: fixed;
             left: 0;
             right: 0;
             top: 0;
-        }
+        } */
     .s_index_columnBlueBtn:hover {
       background-color: var(--mainblue);
       color: #ffffff;
@@ -114,7 +115,7 @@
 }
 
 /* ------------主打活動---------- */
-      .s_index_MonthlyEvents{
+      /* .s_index_MonthlyEvents{
         margin: 150px auto 100px;
         width: 100%;             
       }
@@ -144,7 +145,7 @@
       }
 
       .s_index_choice_PC:hover {
-        background-color: var(--mainblue);
+      background-color:var(--mainblue);
       color: #ffffff;
       }
       .s_index_choice_PC svg:hover{
@@ -159,19 +160,107 @@
         border-radius: 36px;
         height:55px;
         width: 450px;
-        /* z-index: 10; */
+        
         margin: 16px 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
+        align-items: center;      
       }
       .s_index_choice_PC_icon{
         width: 10px;
         height: 20px;
        fill: var(--maindarkgray);
        margin-right: 30px;
-      }
+      } */
+.s_index_MonthlyEvents {
+            margin: 150px auto 100px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .s_index_MonthlyEvents_choiceArea_ph {
+            display: none;
+        }       
+        /* 一個顯示框 */
+        .s_index_MonthlyEvents_choiceArea_PC {
+            max-width: 1200px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            /* margin: 0 auto; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* 全部圖位置 */
+        .img-wrap {
+            width: 4800px;
+            height: 600px;
+            position: absolute;
+            /* left: -1600px; */
+            transition: .5s;
+        }
+
+        /* 用li寫死父層寬 就可以讓後面圖不顯示出來 .img-wrap img{object-fit:改適合的}*/
+        .img-wrap li {
+            width: 1200px;
+        }
+
+        /* 每張圖顯示方式 */
+        .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .s_index_choiceArea_choice_PC {
+            /* margin: 240px 0 0; */
+            position: absolute;
+            /* right: -10%; */
+            right: 18%;
+            top: 380px;
+        }
+       
+        .s_index_choice_PC svg:hover {
+            fill: #ffffff;
+        }
+
+        .slider-dots li {
+            font-size: 20px;
+            line-height: 55px;
+            color: var(--maindarkgray);
+            text-indent: 60px;
+            background-color: var(--mainyellow);
+            border-radius: 36px;
+            height: 55px;
+            width: 450px;
+            /* z-index: 10; */
+            margin: 16px 0;
+
+        }
+
+        .s_index_choice_PC {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* .slider-dots li svg {
+            width: 10px;
+            height: 20px;
+            fill: var(--maindarkgray);
+            margin-right: 30px;
+        } */
+        .s_index_choice_PC_icon {
+            width: 10px;
+            height: 20px;
+            fill: var(--maindarkgray);
+            margin-right: 30px;
+        }
+
+
+
 /*--------每月主打介紹-------*/
 .s_index_MonthlyEvents_intro{
 margin: 100px auto 10px;

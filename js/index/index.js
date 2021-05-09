@@ -17,29 +17,76 @@
 //     }
 // })
 
+
+//-------------每月主打carousel------------
+// 宣告一個變數來儲存現在的頁數
+// 作用域 Scope 全域變數
+// 初始值為零
+let page = 0;
+
+$('.slider-dots li').hover(
+    function () {
+        // page=('.slider-dots li').hover的第幾項
+        page = $(this).index();
+
+        // console.log('hi', $(this));
+        // .index()取得目前符合條件的選擇器是第幾個
+        // console.log($(this).index());
+
+        // ('.slider-dots li').hover後,.siblings()其他物件回復原本顏色
+        $(this).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+        // $(this).find('.s_index_choice_PC_icon').css('fill', '#ffffff');
+        // $(this).siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
+   
+
+        // $(this) 代名詞 = 被 hover 的 li=('.slider-dots li').hover這個狀態function
+
+        // 'px'是字串, $(this).index()是hover到第幾項
+        $('.img-wrap').css('left', $(this).index() * -1200 + 'px');
+    })
+// js es6 的 Function 寫法, 俗稱箭頭函式  setInterval(() => {}, interval);
+// 每三秒 page = page + 1
+setInterval(() => {
+    page = page + 1;
+
+    if (page >= 4) { page = 0; }
+
+    $('.img-wrap').css('left', page * -1200 + 'px');
+    // console.log('page = ', page);
+
+    $('.slider-dots li').eq(page).css('background-color', 'var(--mainblue)').css('color', ' #ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+    // $('.slider - dots li').find('.s_index_choice_PC_icon').css('fill', '#ffffff').siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
+    // $('.slider-dots li').find('.s_index_choice_PC_icon').css('fill', '#ffffff');
+    // $('.slider-dots li').siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
+}, 3000);
+
+
+
+
+
 // --------------狗狗食物動畫---------------
 
-$(window).scroll(function () {
-    console.log('scollTop', $(this).scrollTop());
+// $(window).scroll(function () {
+//     console.log('scollTop', $(this).scrollTop());
 
-    let windowScrollTop = $(this).scrollTop();
+//     let windowScrollTop = $(this).scrollTop();
 
-    if (windowScrollTop > 560) {
-        $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
-    } else {
-        $(".c_dogFeed01")
-            .css("opacity", "0")
-            .css("transform", "translateY(-120px)");
-    }
+//     if (windowScrollTop > 560) {
+//         $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
+//     } else {
+//         $(".c_dogFeed01")
+//             .css("opacity", "0")
+//             .css("transform", "translateY(-120px)");
+//     }
 
-    if (windowScrollTop > 750) {
-        $(".c_dogFeed02").css("opacity", "1").css("transform", "translateY(0px)");
-    } else {
-        $(".c_dogFeed02")
-            .css("opacity", "0")
-            .css("transform", "translateY(-150px)");
-    }
-});
+//     if (windowScrollTop > 750) {
+//         $(".c_dogFeed02").css("opacity", "1").css("transform", "translateY(0px)");
+//     } else {
+//         $(".c_dogFeed02")
+//             .css("opacity", "0")
+//             .css("transform", "translateY(-150px)");
+//     }
+// });
 
 
 
