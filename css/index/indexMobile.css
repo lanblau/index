@@ -160,6 +160,7 @@
             .s_dogShow {
                 /* order: 1; */
                 margin: -100px 0 0 -150px;
+                
 
             }
 
@@ -184,6 +185,28 @@
             .s_hidden {
                 display: none;
             }
+.s_dogFood01,
+.s_dogFood02,
+.s_dogFood03,
+.s_dogFood04 {
+  display: none;
+visibility: hidden;
+
+}
+ 
+.s_index_MonthlyEvents_introRight{
+    position: relative;
+}
+.s_dogFood05 {
+  visibility: visible;  
+  display: block;
+  position: absolute;
+  max-width: 80px;
+  opacity: 1;
+  top: -30px;
+  right: 30px;
+  transition: 2s;
+}
 
    /*--------熱銷商品-------------*/
 

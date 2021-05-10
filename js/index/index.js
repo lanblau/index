@@ -17,6 +17,33 @@
 //     }
 // })
 
+//--------影片控制----------
+function onYouTubeIframeAPIReady() {
+    var player;
+    player = new YT.Player('YouTubeVideoPlayerAPI', {
+        videoId: 'hBUItPpkOVU',   // YouTube 影片ID
+        // width: '1080',            // 播放器寬度 (px)
+        // height: '720',           // 播放器高度 (px)
+        playerVars: {
+            autoplay: 1,            // 自動播放影片
+            controls: 0,            // 顯示播放器
+            showinfo: 0,            // 隱藏影片標題
+            modestbranding: 0,      // 隱藏YouTube Logo
+            loop: 1,                // 重覆播放
+            playlist: 'hBUItPpkOVU', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+            fs: 0,                  // 隱藏全螢幕按鈕
+            cc_load_policty: 0,     // 隱藏字幕
+            iv_load_policy: 3,      // 隱藏影片註解
+            autohide: 0             // 影片播放時，隱藏影片控制列
+        },
+        events: {
+            onReady: function (e) {
+                e.target.mute();      //播放時靜音
+                e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+            }
+        }
+    });
+}
 
 //-------------每月主打carousel------------
 // 宣告一個變數來儲存現在的頁數
@@ -34,10 +61,10 @@ $('.s_slider-dots li').hover(
         // console.log($(this).index());
 
         // ('.s_slider-dots li').hover後,.siblings()其他物件回復原本顏色
-        $(this).css('background-color', 'var(--mainblue)').css('color','#ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
+        $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
         // $(this).find('.s_index_choice_PC_icon').css('fill', '#ffffff');
         // $(this).siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
-   
+
 
         // $(this) 代名詞 = 被 hover 的 li=('.s_slider-dots li').hover這個狀態function
 
@@ -66,27 +93,44 @@ setInterval(() => {
 
 // --------------狗狗食物動畫---------------
 
-// $(window).scroll(function () {
-//     console.log('scollTop', $(this).scrollTop());
+$(window).scroll(function () {
+    console.log('scollTop', $(this).scrollTop());
 
-//     let windowScrollTop = $(this).scrollTop();
+    let windowScrollTop = $(this).scrollTop();
 
-//     if (windowScrollTop > 560) {
-//         $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
-//     } else {
-//         $(".c_dogFeed01")
-//             .css("opacity", "0")
-//             .css("transform", "translateY(-120px)");
-//     }
+    //手機板飼料
+    if (windowScrollTop > 1100) {
+        $(".s_dogFood05").css("opacity", "1").css("transform", "translateY(0px)");      
+    } else {
+        $(".s_dogFood05")
+            .css("opacity", "0")
+            .css("transform", "translateY(-120px)");       
+    }
+    //電腦版飼料
+    if (windowScrollTop > 1600) {
+        $(".s_dogFood01").css("opacity", "1").css("transform", "translateY(0px)");
+        $(".s_dogFood02").css("opacity", "1").css("transform", "translateY(0px)");
+    } else {
+        $(".s_dogFood01")
+            .css("opacity", "0")
+            .css("transform", "translateY(-150px)");
+        $(".s_dogFood02")
+            .css("opacity", "0")
+            .css("transform", "translateY(-150px)");
+    }
 
-//     if (windowScrollTop > 750) {
-//         $(".c_dogFeed02").css("opacity", "1").css("transform", "translateY(0px)");
-//     } else {
-//         $(".c_dogFeed02")
-//             .css("opacity", "0")
-//             .css("transform", "translateY(-150px)");
-//     }
-// });
+    if (windowScrollTop > 1700) {
+        $(".s_dogFood03").css("opacity", "1").css("transform", "translateY(0px)");
+        $(".s_dogFood04").css("opacity", "1").css("transform", "translateY(0px)");
+    } else {
+        $(".s_dogFood03")
+            .css("opacity", "0")
+            .css("transform", "translateY(-150px)");
+        $(".s_dogFood04")
+            .css("opacity", "0")
+            .css("transform", "translateY(-150px)");
+    }
+});
 
 
 

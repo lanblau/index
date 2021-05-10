@@ -288,6 +288,9 @@ color:var(--mainblue) ;
   width: 500px;
   margin: 0;  
 }
+.s_index_MonthlyEvents_introRight{
+  position: relative;
+}
 .s_index_MonthlyEvents_introRight img {
   display: inline-block;
   width:200px;
@@ -306,22 +309,40 @@ color:var(--mainblue) ;
 margin: 0;
 }
 
-.c_dogFeed01,
-.c_dogFeed02 {
+.s_dogFood01,
+.s_dogFood02,
+.s_dogFood03,
+.s_dogFood04 {
+  display: block;
+  visibility: visible;
   position: absolute;
-  max-width: 70px;
-
+  max-width: 100px;
   opacity: 1;
 }
-.c_dogFeed01 {
-  bottom: 50px;
-  left: 165px;
-  transition: 1.5s;
+.s_dogFood05 {
+  display: none; 
+visibility: hidden;
 }
-.c_dogFeed02 {
+.s_dogFood01 {
+  bottom: 70px;
+  left: 55px;
+  transition: 2s;
+}
+.s_dogFood02 {
   bottom: 50px;
   right: 45px;
-  transition: 1s;
+  transition: 2s;
+}
+.s_dogFood03 {
+  bottom:30px;
+  left: 35px;
+  transition: 2s;
+  transform: rotate(145deg);
+}
+.s_dogFood04 {
+  bottom: 50px;
+  right: 35px;
+  transition: 2s;
 }
 
 
