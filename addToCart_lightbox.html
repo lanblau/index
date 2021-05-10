@@ -28,7 +28,7 @@
         .s_addToCart {
             background-color: #F7F4EE;
             width: 800px;
-            height: 900px;
+            height: 850px;
             margin: 0 auto;
             border-radius: 10px;
         }
@@ -147,9 +147,9 @@
 
 
         .c_cart_itemAmount {
-            /* margin: 0 15%; */
+            /* margin: 0 5%; */
             /* line-height: 2.2; */
-            max-width: 60px;
+            max-width: 70px;
             border: none;
             text-align: center;
             background-color: rgba(255, 255, 255, 0);
@@ -168,7 +168,7 @@
         }
 
         /* 手機 */
-        @media (max-width:300px) {
+        @media (max-width:400px) {
             .c_cart_item_content {
                 max-width: 250px;
 
@@ -254,84 +254,200 @@
             letter-spacing: 1.5px;
             cursor: pointer;
         }
+
+        .modal-content {
+            background-color: unset;
+        }
+
+        .s_return {
+            position: absolute;
+            top: 0;
+            margin: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="s_addToCart">
-        <svg class="s_addToCart_closeWindow">
-            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
-            </use>
-        </svg>
-        <div class="s_addToCart_addItem">
-            <div class="s_addToCart_addItem_img">
-                <img src="./images/index/dog_hills_12_feed.png" alt="">
-            </div>
-            <div class="s_addToCart_addItem_product">
-                <div class="s_addToCart_addItem_productName">
-                    <p>Hill's 希爾思 | 貓用 c/d Multicare 8.5磅
-                        全效配方 泌尿道健康 處方貓飼料</p>
-                </div>
-                <div class="s_addToCart_addItem_productPrice">NT$1,500
-                </div>
-            </div>
 
-        </div>
-        <div class="s_addToCart_choose">
-            <div class="s_addToCart_choose_word">
-                <p>請選擇規格</p>
-            </div>
 
-            <div class="s_addToCart_choose_box">
-                <!-- <div class="s_addToCart_size"> -->
-                <!-- <p>尺寸規格</p> -->
-                <div class="s_addToCart_choose_content">
-                    <div class="row c_cart_item_content">
-                        <div class="s_addToCart_size">尺寸規格</div>
-                        <div class="c_cart_item_blueBTN_size">
-                            2kg<svg>
-                                <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
-                            </svg>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCart">
+        add To Cart
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content ">
+
+                <!-- <div class="modal-body"> -->
+                <div class="s_addToCart">
+                    <svg class=" s_addToCart_closeWindow" data-dismiss="modal" aria-label="Close">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
+                        </use>
+                    </svg>
+                    <div class="s_addToCart_addItem">
+                        <div class="s_addToCart_addItem_img">
+                            <img src="./images/index/dog_hills_12_feed.png" alt="">
+                        </div>
+                        <div class="s_addToCart_addItem_product">
+                            <div class="s_addToCart_addItem_productName">
+                                <p>Hill's 希爾思 | 貓用 c/d Multicare 8.5磅
+                                    全效配方 泌尿道健康 處方貓飼料</p>
+                            </div>
+                            <div class="s_addToCart_addItem_productPrice">NT$1,500
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="s_addToCart_choose">
+                        <div class="s_addToCart_choose_word">
+                            <p>請選擇規格</p>
+                        </div>
+
+                        <div class="s_addToCart_choose_box">
+                            <!-- <div class="s_addToCart_size"> -->
+                            <!-- <p>尺寸規格</p> -->
+                            <div class="s_addToCart_choose_content">
+                                <div class="row c_cart_item_content">
+                                    <div class="s_addToCart_size">尺寸規格</div>
+                                    <div class="c_cart_item_blueBTN_size">
+                                        2kg<svg>
+                                            <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                                <!-- </div> -->
+
+                                <!-- <div class="s_addToCart_plan">
+                                 <p>購買方案</p> -->
+                                <div class="row c_cart_item_content">
+                                    <div class="s_addToCart_plan">購買方案</div>
+                                    <div class="c_cart_item_blueBTN_time">
+                                        單次訂購
+                                        <svg>
+                                            <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <div class="s_addToCart_number row">
+                                    <p>選擇數量</p>
+                                    <div class="c_cart_item_amount">
+                                        <button type="button" class="min">-</button>
+                                        <input type="text" name="" value="1" class="num c_cart_itemAmount" />
+                                        <button type="button" class="add">+</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- </div> -->
-                    <!-- </div> -->
+                    <div class="s_addToCart_submitBtn_area">
+                        <a href="">
+                            <button class="s_addToCart_submitBtn">加入購物車</button>
+                            <!-- type="button" -->
+                        </a>
+                    </div>
 
-                    <!-- <div class="s_addToCart_plan">
-                 <p>購買方案</p> -->
-                    <div class="row c_cart_item_content">
-                        <div class="s_addToCart_plan">購買方案</div>
-                        <div class="c_cart_item_blueBTN_time">
-                            單次訂購
-                            <svg>
-                                <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="s_addToCart_number row">
-                        <p>選擇數量</p>
-                        <div class="c_cart_item_amount">
-                            <button type="button" class="min">-</button>
-                            <input type="text" name="" value="1" class="num c_cart_itemAmount" />
-                            <button type="button" class="add">+</button>
-                        </div>
-                    </div>
                 </div>
+
+                <!-- </div> -->
+
             </div>
         </div>
-
-        <div class="s_addToCart_submitBtn_area">
-            <a href="">
-                <button class="s_addToCart_submitBtn">加入購物車</button>
-                <!-- type="button" -->
-            </a>
-        </div>
-
     </div>
-    </div>
 
+
+    <!-- ----------test-------- -->
+    <button type="button" class="btn btn-primary s_return" data-toggle="modal" data-target="#exampleModal">
+        add To Cart
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content ">
+
+                <!-- <div class="modal-body"> -->
+                <div class="s_addToCart">
+                    <svg class=" s_addToCart_closeWindow" data-dismiss="modal" aria-label="Close">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
+                        </use>
+                    </svg>
+                    <div class="s_addToCart_addItem">
+                        <div class="s_addToCart_addItem_img">
+                            <img src="./images/index/dog_hills_12_feed.png" alt="">
+                        </div>
+                        <div class="s_addToCart_addItem_product">
+                            <div class="s_addToCart_addItem_productName">
+                                <p>Hill's 希爾思 | 貓用 c/d Multicare 8.5磅
+                                    全效配方 泌尿道健康 處方貓飼料</p>
+                            </div>
+                            <div class="s_addToCart_addItem_productPrice">NT$1,500
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="s_addToCart_choose">
+                        <div class="s_addToCart_choose_word">
+                            <p>請選擇規格</p>
+                        </div>
+
+                        <div class="s_addToCart_choose_box">
+                            <!-- <div class="s_addToCart_size"> -->
+                            <!-- <p>尺寸規格</p> -->
+                            <div class="s_addToCart_choose_content">
+                                <div class="row c_cart_item_content">
+                                    <div class="s_addToCart_size">尺寸規格</div>
+                                    <div class="c_cart_item_blueBTN_size">
+                                        2kg<svg>
+                                            <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                                <!-- </div> -->
+
+                                <!-- <div class="s_addToCart_plan">
+                                 <p>購買方案</p> -->
+                                <div class="row c_cart_item_content">
+                                    <div class="s_addToCart_plan">購買方案</div>
+                                    <div class="c_cart_item_blueBTN_time">
+                                        單次訂購
+                                        <svg>
+                                            <use xlink:href="./images/Cart/cart_SVG.svg#c_arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <div class="s_addToCart_number row">
+                                    <p>選擇數量</p>
+                                    <div class="c_cart_item_amount">
+                                        <button type="button" class="min">-</button>
+                                        <input type="text" name="" value="1" class="num c_cart_itemAmount" />
+                                        <button type="button" class="add">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
 
 
 
