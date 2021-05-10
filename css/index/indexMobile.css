@@ -79,7 +79,9 @@
             .s_index_MonthlyEvents_choiceArea_PC {
                 display: none;
             }
-
+            .s_index_choiceArea_choice_PC{
+             display: none;
+            }
             .s_index_MonthlyEvents_choiceArea_ph {
                 width: 360px;
                 margin: 50px 0;
