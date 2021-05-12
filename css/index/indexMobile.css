@@ -18,17 +18,19 @@
             }
 
    /*-------影片區----------*/
-     .s_index_videoSection_PC{
+   .s_index_videoSection_PC_all{
         display: none;
-      }
+   }
+     /* .s_index_videoSection_PC{
+      } */
         .s_index_videoSection_ph{
         display: block;
         position: relative;
-        /* margin: 50px 0 0 -30px ; */
         margin: 60px auto 0;
         /* width: 300px;
         height: 425px; */
-        padding-bottom:169%;
+        /* padding-bottom:215%; */
+        padding-bottom:207%;
         /* padding-bottom:133%; */
         padding-top: 35px; 
 /* padding-left: 100px; */
@@ -49,7 +51,7 @@
      height: 50px;
      position: absolute;
      left: -10px;
-     top: 480px;
+     top: 580px;
      /* z-index: -1; */
 }
 .s_index_videoSection_doorL_ph img{
@@ -530,7 +532,9 @@ left: -1000px; */
             .s_donationCount_number {
                 font-size: 14px;
                 font-weight: 700;
-
+                display: flex;
+                align-content: center;
+                justify-content: center;
             }
 
             /*--------logo-----------*/
