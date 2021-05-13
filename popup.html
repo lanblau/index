@@ -1,0 +1,176 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>popup</title>
+
+    <style>
+        body {
+            background-color: #70707063;
+        }
+
+        @media (min-width: 300px) {
+            .s_popup {
+                background-color: #ffffff;
+                width: 300px;
+                height: 150px;
+                margin: 0 auto;
+                border-radius: 10px;
+                border: solid 3px var(--mainyellow);   padding: 20px;
+            }
+ 
+            
+
+            .s_popup_area {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .s_popup_content {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 10px 0;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .s_popup_star {
+                margin: 10px;
+            }
+
+            .s_popup_star_icon {
+                fill: var(--mainyellow);
+                height: 25px;
+                width: 25px;
+            }
+
+            .s_popup_content_situation {
+                font-size: 16px;
+                margin: 10px;
+
+            }
+
+            .s_popup_next {
+                
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+        @media (min-width: 500px) {
+            .s_popup {
+                background-color: #ffffff;
+                width: 450px;
+                height: 200px;
+                margin: 0 auto;
+                border-radius: 10px;
+                border: solid 3px var(--mainyellow);
+                padding: 30px;
+            }
+
+            .s_popup_area {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .s_popup_content {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 10px 0;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .s_popup_star {
+                margin: 10px;
+            }
+
+            .s_popup_star_icon {
+                fill: var(--mainyellow);
+                height: 25px;
+                width: 25px;
+            }
+
+            .s_popup_content_situation {
+                font-size: 22px;
+                margin: 10px;
+
+            }
+
+            .s_popup_next {
+                
+                font-size: 16px;
+                text-align: center;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="s_popup">
+        <div class="s_popup_area">
+            <div class="s_popup_content">
+                <div class="s_popup_star">
+                    <svg class="s_popup_star_icon">
+                        <use xlink:href="./images/index/icomoon/symbol-defs.svg#Successful-order"></use>
+                    </svg>
+                </div>
+                <p class="s_popup_content_situation">密碼重設成功</p>
+            </div>
+            <p class="s_popup_next">將移至會員登入頁，請重新登入</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+    <script src="./js/index/index.js"></script>
+
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

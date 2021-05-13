@@ -19,7 +19,7 @@
         rel="stylesheet">
 
 
-    <title>OrderReturn</title>
+    <title>CancelOrder</title>
     <style>
         body {
             background-color: #70707063;
@@ -29,7 +29,7 @@
             .s_CancelOrder {
                 background-color: #F7F4EE;
                 width: 300px;
-                height: 810px;
+                height: 730px;
                 margin: 0 auto;
                 border-radius: 10px;
             }
@@ -66,8 +66,6 @@
 
             }
 
-
-
             .s_CancelOrder_subtitle_content {
                 width: 250px;
             }
@@ -79,7 +77,6 @@
                 font-size: 14px;
                 line-height: 14px;
             }
-
 
 
             .s_array {
@@ -144,6 +141,7 @@
                 border-radius: 20px;
                 border: none;
                 border-color: var(--mainyellow);
+                padding: 10px;
 
             }
 
@@ -193,7 +191,7 @@
             .s_CancelOrder {
                 background-color: #F7F4EE;
                 width: 700px;
-                height: 740px;
+                height: 700px;
                 margin: 0 auto;
                 border-radius: 10px;
             }
@@ -232,6 +230,7 @@
 
             .s_CancelOrder_subtitle_content {
                 width: 280px;
+
             }
 
             .s_CancelOrder_smalltitle {
@@ -366,35 +365,35 @@
             </use>
         </svg>
         <div class="s_CancelOrder_title">
-            <p>申請退貨</p>
+            <p>取消訂單</p>
         </div>
         <div class="s_CancelOrder_subtitle">
-            <p class="s_CancelOrder_subtitle_title">*小提醒:</p>
-            <p class="s_CancelOrder_subtitle_content"> 請維護買賣雙方誠信原則，不任意退貨，避免降低個人信用評價。</p>
+            <p>*小提醒:</p>
+            <p class="s_CancelOrder_subtitle_content"> 請維護買賣雙方誠信原則，不任意取消訂單，避免降低個人信用評價。</p>
         </div>
         <div class="s_CancelOrder_smalltitle">
-            <p>退貨的原因</p>
+            <p>取消訂單的原因</p>
         </div>
         <div class="dropdown s_dropdown">
             <button class="btn dropdown-toggle 
             s_array" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                請選擇退貨原因
+                請選擇取消原因
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item s_dropdown-item s_coupon" href="#">想用優惠折扣重新訂購</a>
                 <a class="dropdown-item  s_dropdown-item s_wonder" href="#">對商品有疑慮</a>
                 <a class="dropdown-item s_dropdown-item s_wrong" href="#">操作錯誤</a>
-                <a class="dropdown-item s_dropdown-item s_similar" href="#">出貨錯誤</a>
-                <a class="dropdown-item s_dropdown-item s_dislike" href="#">贈品缺件或商品狀態不良</a>
+                <a class="dropdown-item s_dropdown-item s_similar" href="#">想要或已購買類似商品</a>
+                <a class="dropdown-item s_dropdown-item s_dislike" href="#">尺寸規格不合/不喜歡</a>
             </div>
         </div>
         <div class="s_CancelOrder_smalltitle">
             <p>備註</p>
             <p class="s_CancelOrder_smalltitle_small">(字數最多30字)</p>
         </div>
-        <div class="s_CancelOrder_input_area"> <input class="s_CancelOrder_input" type="text" maxlength="30"
-                placeholder="退貨的原因">
+        <div class="s_CancelOrder_input_area"> <textarea class="s_CancelOrder_input" type="text" maxlength="30"
+                placeholder="取消的原因" required name="CancelOrderReason"></textarea>
         </div>
         <div class="s_CancelOrder_btnGroup">
             <div class="">
@@ -404,17 +403,14 @@
             </div>
             <div class="">
                 <a href="">
-                    <button class="s_CancelOrder_submitBtn">確認退貨</button>
+                    <button class="s_CancelOrder_submitBtn">確認取消訂單</button>
                 </a>
             </div>
         </div>
         <div class="s_CancelOrder_smallpara">
-            <p>我們立即為您辦理退貨，並請您留意<br>
-                1. 請務必將退貨編號寫在包裝箱/袋，若有不同編退貨編號，請個別包裝，方可進行退貨。<br>
-                2. 若已收到商品，請務必將所有訂購商品、配件、贈品及包裝盒完整置入原外裝箱中。<br>
-                3. 如有參與銀行回饋活動，請留意部分商品退貨，或個人因素變更分期期數，造成原訂單刷卡授權時間變更，將影響相關活動權益。<br>
-                4. 請留意訂單取消後，則該優惠活動將無法重新享有(例：折價券、會員首購、銀行活動、毛金幣)。<br>
-                5. 我們將派人到府回收，待確認商品無誤後，儘速為您辦理退款。</p>
+            <p>我們立即為您辦理取消訂單，並請您留意<br>
+                1. 如有參與銀行回饋活動，請留意部分商品退貨，或個人因素變更分期期數，造成原訂單刷卡授權時間變更，將影響相關活動權益。<br>
+                2. 請留意訂單取消後，則該優惠活動將無法重新享有(例：折價券、會員首購、銀行活動、毛金幣)。</p>
         </div>
 
     </div>

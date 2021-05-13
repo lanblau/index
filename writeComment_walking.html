@@ -1,0 +1,527 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>writeComment_walking</title>
+
+    <style>
+        body {
+            background-color: #70707063;
+        }
+
+        @media (min-width: 300px) {
+            .s_writeComment_walking {
+                background-color: #F7F4EE;
+                width: 300px;
+                height: 750px;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+
+            .s_writeComment_walking_closeWindow {
+                width: 15px;
+                height: 15px;
+                fill: var(--mainyellow);
+                margin: 40px 10px 20px 250px;
+            }
+
+            .s_writeComment_walking_closeWindow:hover {
+                fill: var(--mainblue);
+
+            }
+
+            .s_writeComment_walking_title {
+                /* text-align: center; */
+                margin: 10px 0 0 30px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .s_writeComment_walking_orderDetail {
+                width: 250px;
+                height: 150px;
+                background-color: var(--mainyellow);
+                border-radius: 20px;
+                margin: 10px auto;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+
+            .s_writeComment_walking_order_detail_img {
+                width: 70px;
+                height: 70px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .s_writeComment_walking_detail {
+
+                /* border: 1px solid red; */
+                display: flex;
+                width: 90%;
+                flex-wrap: wrap;
+                margin: 10px auto;
+                font-size: 12px;
+                position: relative;
+
+            }
+
+            .s_writeComment_walking_detail_grid {
+
+                display: grid;
+                grid-template-columns: 60px 120px;
+                Grid-template-rows: 20px 20px 20px 20px 20px;
+                margin-top: 10px;
+                position: absolute;
+                top: 20px;
+                left: 80px;
+            }
+
+            .s_writeComment_walking_order_detail_name {
+                width: 60%;
+                margin: 0 10px 0 0;
+
+            }
+
+            .s_writeComment_walking_order_detail_price {
+                /* width: 100%;
+                margin-top: 10px;
+                text-align: center; */
+                display: none;
+            }
+
+            /* .s_writeComment_walking_detail {
+                display: grid;
+                width: 550px;
+                grid-template-columns: 100px 70px 325px 1fr;
+                Grid-template-rows: 100px;
+             
+            }
+
+            .s_writeComment_walking_detail_grid {
+                display: grid;
+                grid-template-columns: 40px 100px 75px 115px;
+                Grid-template-rows: 50px 50px;
+                margin-top: 10px;
+            } */
+
+            /* .s_writeComment_walking_detail_grid .s_writeComment_walking_plan {
+            padding: 0 0;
+        } */
+
+            /* .s_writeComment_walking_order_detail_price {
+                line-height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_name {
+                margin-top: 35px;
+                text-align: center;
+              
+            } */
+
+            .s_writeComment_walking_subtiitle {
+                font-size: 16px;
+                margin: 10px 0 0 30px;
+            }
+
+            .s_writeComment_walking_starArea {
+
+                margin: 10px 0 0 30px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                line-height: 14px;
+
+            }
+
+            .s_writeComment_walking_starword {
+                font-size: 14px;
+                margin-top: 5px;
+                /* line-height: 16px; */
+            }
+
+            .s_writeComment_walking_star {
+                margin: 0 0 0 7px;
+
+
+            }
+
+            .s_writeComment_walking_star_icon {
+                max-width: 12px;
+                height: 12px;
+                fill: var(--mainyellow);
+
+            }
+
+            .s_writeComment_walking_input_area {
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                /* vertical-align: middle; */
+            }
+
+            .s_writeComment_walking_input {
+                width: 250px;
+                height: 180px;
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+
+            }
+
+            .s_writeComment_walking_input:focus,
+            .s_writeComment_walking_input:active:focus,
+            .s_writeComment_walking_input.active:focus {
+                outline: 0;
+                box-shadow: 1px 1px 3px 1px var(--mainyellow), -1px -1px 3px 1px var(--mainyellow);
+            }
+
+            .s_writeComment_walking_notice {
+                font-size: 12px;
+                margin: 10px 0 0 30px;
+                width: 250px;
+
+            }
+
+            .s_writeComment_walking_btnGroup {
+                /* margin: 10px 50px; */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .s_writeComment_walking_cancelBtn,
+            .s_writeComment_walking_submitBtn {
+                border: 0;
+                background-color: var(--mainyellow);
+                color: var(--maindarkgray);
+                font-size: 14px;
+                height: 35px;
+                width: 120px;
+                border-radius: 36px;
+                margin: 15px 8px;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
+
+            .s_writeComment_walking_cancelBtn:hover,
+            .s_writeComment_walking_submitBtn:hover {
+                background-color: var(--mainblue);
+                color: #ffffff;
+            }
+        }
+
+        @media (min-width: 500px) {
+            .s_writeComment_walking {
+                background-color: #F7F4EE;
+                width: 700px;
+                height: 750px;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+
+            .s_writeComment_walking_closeWindow {
+                width: 25px;
+                height: 25px;
+                fill: var(--mainyellow);
+                margin: 40px 60px 20px 610px;
+            }
+
+            .s_writeComment_walking_closeWindow:hover {
+                fill: var(--mainblue);
+
+            }
+
+            .s_writeComment_walking_title {
+                /* text-align: center; */
+                margin: 10px 0 0 50px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .s_writeComment_walking_orderDetail {
+                width: 600px;
+                height: 150px;
+                background-color: var(--mainyellow);
+                border-radius: 20px;
+                margin: 10px auto;
+                padding: 25px;
+                font-size: 16px;
+            }
+
+
+            .s_writeComment_walking_order_detail_img {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .s_writeComment_walking_detail {
+                display: grid;
+                width: 550px;
+                grid-template-columns: 100px 70px 325px 1fr;
+                Grid-template-rows: 100px;
+                font-size: 16px;
+
+
+                /* margin: 0px auto; */
+            }
+
+            .s_writeComment_walking_detail_grid {
+                display: grid;
+                grid-template-columns: 40px 100px 75px 115px;
+                Grid-template-rows: 50px 50px;
+                margin-top: 10px;
+                position: unset;
+
+            }
+
+            /* .s_writeComment_walking_detail_grid .s_writeComment_walking_plan {
+            padding: 0 0;
+        } */
+            .s_writeComment_walking_order_detail_name {
+                width: 100%;
+                margin: 35px 0 0;
+                text-align: center;
+                /* vertical-align: middle; */
+            }
+
+            .s_writeComment_walking_order_detail_price {
+                line-height: 100px;
+                display: block;
+
+            }
+
+
+
+            .s_writeComment_walking_subtiitle {
+                font-size: 18px;
+                margin: 10px 0 0 50px;
+            }
+
+            .s_writeComment_walking_starArea {
+
+                margin: 10px 0 0 50px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                line-height: 16px;
+
+            }
+
+            .s_writeComment_walking_starword {
+                font-size: 16px;
+                margin-top: 10px;
+                /* line-height: 16px; */
+            }
+
+            .s_writeComment_walking_star {
+                margin: 0 0 0 10px;
+
+
+            }
+
+            .s_writeComment_walking_star_icon {
+                max-width: 30px;
+                height: 30px;
+                fill: var(--mainyellow);
+
+            }
+
+            .s_writeComment_walking_input_area {
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                /* vertical-align: middle; */
+            }
+
+            .s_writeComment_walking_input {
+                width: 600px;
+                height: 220px;
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+
+            }
+
+            .s_writeComment_walking_input:focus,
+            .s_writeComment_walking_input:active:focus,
+            .s_writeComment_walking_input.active:focus {
+                outline: 0;
+                box-shadow: 1px 1px 3px 1px var(--mainyellow), -1px -1px 3px 1px var(--mainyellow);
+            }
+
+            .s_writeComment_walking_notice {
+                font-size: 14px;
+                margin: 10px 0 0 50px;
+                width: 100%;
+            }
+
+            .s_writeComment_walking_btnGroup {
+                /* margin: 10px 50px; */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .s_writeComment_walking_cancelBtn,
+            .s_writeComment_walking_submitBtn {
+                border: 0;
+                background-color: var(--mainyellow);
+                color: var(--maindarkgray);
+                font-size: 18px;
+                height: 35px;
+                width: 150px;
+                border-radius: 36px;
+                margin: 20px 15px;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
+
+            .s_writeComment_walking_cancelBtn:hover,
+            .s_writeComment_walking_submitBtn:hover {
+                background-color: var(--mainblue);
+                color: #ffffff;
+            }
+        }
+
+        /* * {
+            outline: 1px orange solid;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="s_writeComment_walking">
+        <svg class=" s_writeComment_walking_closeWindow" data-dismiss="modal" aria-label="Close">
+            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
+            </use>
+        </svg>
+        <div class="s_writeComment_walking_title">
+            <p>填寫評價</p>
+        </div>
+        <div class="s_writeComment_walking_orderDetail">
+            <div class="s_writeComment_walking_detail">
+                <div class="s_writeComment_walking_order_detail_img"><img src="./walkingDog.png" alt="">
+                </div>
+                <div class="s_writeComment_walking_order_detail_name">遛狗服務</div>
+
+                <div class="s_writeComment_walking_detail_grid">
+                    <div class="s_writeComment_walking_date">日期</div>
+                    <div class="s_writeComment_walking_date_return">2021/05/18</div>
+                    <div class="s_writeComment_walking_plan">選購方案</div>
+                    <div class="s_writeComment_walking_plan_return">方案二(一小時)</div>
+                    <div class="s_writeComment_walking_time">時間</div>
+                    <div class="s_writeComment_walking_time_return">18:30</div>
+                    <div class="s_writeComment_walking_servicer">代遛人員</div>
+                    <div class="s_writeComment_walking_servicer_return">于誠</div>
+                </div>
+                <div class="s_writeComment_walking_order_detail_price">NT$3,000</div>
+
+            </div>
+
+
+        </div>
+        <div class="s_writeComment_walking_subtiitle">對於此服務
+        </div>
+        <div class="s_writeComment_walking_starArea">
+            <p class="s_writeComment_walking_starword">好評星等
+            </p>
+
+            <div class="s_writeComment_walking_star">
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="s_writeComment_walking_input_area">
+            <textarea class="s_writeComment_walking_input" maxlength="250" placeholder="填寫評價 (字數最多250字)"
+                name="comment"></textarea>
+        </div>
+        <div class="s_writeComment_walking_notice">
+            請注意不要有不雅文字，及惡意中傷他人之發言。
+        </div>
+        <div class="s_writeComment_walking_btnGroup">
+            <div class="">
+                <a href="">
+                    <button class="s_writeComment_walking_cancelBtn">之後再說</button>
+                </a>
+            </div>
+            <div class="">
+                <a href="">
+                    <button class="s_writeComment_walking_submitBtn">發佈評價</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+    <script src="./js/index/index.js"></script>
+
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

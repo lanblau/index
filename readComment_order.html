@@ -1,0 +1,491 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>readComment_order</title>
+
+    <style>
+        body {
+            background-color: #70707063;
+        }
+
+        @media (min-width: 300px) {
+            .s_writeComment_order {
+                background-color: #F7F4EE;
+                width: 300px;
+                height: 500px;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+
+            .s_writeComment_walking_closeWindow {
+                width: 15px;
+                height: 15px;
+                fill: var(--mainyellow);
+                margin: 40px 10px 20px 250px;
+            }
+
+            .s_writeComment_walking_closeWindow:hover {
+                fill: var(--mainblue);
+
+            }
+
+            .s_writeComment_walking_title {
+                /* text-align: center; */
+                margin: 10px 0 0 30px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .s_writeComment_order_orderDetail {
+                width: 250px;
+                height: 40px;
+                background-color: var(--mainyellow);
+                border-radius: 10px;
+                margin: 10px auto;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+
+            .s_writeComment_walking_order_detail_img {
+                width: 70px;
+                height: 70px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            /* .s_writeComment_walking_detail {
+
+                display: flex;
+                width: 90%;
+                flex-wrap: wrap;
+                margin: 10px auto;
+                font-size: 12px;
+                position: relative;
+
+            }
+
+            .s_writeComment_walking_detail_grid {
+
+                display: grid;
+                grid-template-columns: 60px 120px;
+                Grid-template-rows: 20px 20px 20px 20px 20px;
+                margin-top: 10px;
+                position: absolute;
+                top: 20px;
+                left: 80px;
+            }
+
+            .s_writeComment_walking_order_detail_name {
+                width: 60%;
+                margin: 0 10px 0 0;
+
+            }
+
+            .s_writeComment_walking_order_detail_price {
+                display: none;
+            } */
+
+            .s_readComment_walking_commentArea {
+                width: 250px;
+                height: 280px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                margin: 20px auto;
+                padding: 15px;
+                font-size: 14px;
+                border: #ccc 1px solid;
+            }
+
+            .s_readComment_walking_member {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+
+            }
+
+            .s_readComment_walking_memberPhoto {
+                max-width: 35px;
+                max-height: 35px;
+
+            }
+
+            .s_readComment_walking_memberPhoto svg {
+                width: 100%;
+                height: 100%;
+            }
+
+            .s_readComment_walking_member_detail {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+            }
+
+            .s_readComment_walking_memberName {
+                margin: 5px 20px 0;
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .s_readComment_walking_star {
+                display: flex;
+                flex-direction: row;
+                margin: 5px 20px 0;
+
+            }
+
+            .s_readComment_walking_star_icon {
+                fill: var(--mainyellow);
+                max-width: 12px;
+                max-height: 12px;
+            }
+
+            .s_readComment_walking_content {
+                width: 200px;
+                height: fit-content;
+                padding: 0 0 50px 0;
+                font-size: 14px;
+                margin: 18px auto;
+            }
+
+            .s_readComment_walking_comment_bottom {
+                display: flex;
+                flex-direction: row;
+                align-content: flex-end;
+            }
+
+            .s_readComment_walking_img {
+                width: 50px;
+                height: 50px;
+                margin: 20px 0px;
+            }
+
+            .s_readComment_walking_img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .s_readComment_walking_time {
+                font-size: 14px;
+                margin: 50px 0 0 50px;
+            }
+        }
+
+
+
+
+
+        @media (min-width: 500px) {
+            .s_writeComment_order {
+                background-color: #F7F4EE;
+                width: 700px;
+                height: 620px;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+
+            .s_writeComment_walking_closeWindow {
+                width: 25px;
+                height: 25px;
+                fill: var(--mainyellow);
+                margin: 40px 60px 20px 610px;
+            }
+
+            .s_writeComment_walking_closeWindow:hover {
+                fill: var(--mainblue);
+
+            }
+
+            .s_writeComment_walking_title {
+                /* text-align: center; */
+                margin: 10px 0 0 50px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .s_writeComment_order_orderDetail {
+                width: 600px;
+                height: 70px;
+                background-color: var(--mainyellow);
+                border-radius: 20px;
+                margin: 10px auto;
+                padding: 25px;
+                font-size: 16px;
+            }
+
+
+            /* .s_writeComment_walking_order_detail_img {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .s_writeComment_walking_detail {
+                display: grid;
+                width: 550px;
+                grid-template-columns: 100px 70px 325px 1fr;
+                Grid-template-rows: 100px;
+                font-size: 16px;
+
+
+               
+            }
+
+            .s_writeComment_walking_detail_grid {
+                display: grid;
+                grid-template-columns: 40px 100px 75px 115px;
+                Grid-template-rows: 50px 50px;
+                margin-top: 10px;
+                position: unset;
+
+            }
+ */
+
+            /* .s_writeComment_walking_order_detail_name {
+                width: 100%;
+                margin: 35px 0 0;
+                text-align: center;
+               
+            }
+
+            .s_writeComment_walking_order_detail_price {
+                line-height: 100px;
+                display: block;
+
+            } */
+
+            .s_readComment_walking_commentArea {
+                width: 600px;
+                height: 330px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                margin: 30px auto;
+                padding: 25px;
+                font-size: 16px;
+                border: #ccc 1px solid;
+            }
+
+            .s_readComment_walking_member {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+
+            }
+
+            .s_readComment_walking_memberPhoto {
+                max-width: 60px;
+                height: 60px;
+
+            }
+
+            .s_readComment_walking_member_detail {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+            }
+
+            .s_readComment_walking_memberName {
+                margin: 10px 30px 0;
+                font-size: 16px;
+                text-align: left;
+            }
+
+            .s_readComment_walking_star {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 30px 0;
+
+            }
+
+            .s_readComment_walking_star_icon {
+                fill: var(--mainyellow);
+                max-width: 20px;
+                max-height: 20px;
+            }
+
+            .s_readComment_walking_content {
+                width: 500px;
+                height: fit-content;
+                padding: 0 0 80px 0;
+                font-size: 16px;
+                margin: 20px auto;
+            }
+
+            .s_readComment_walking_comment_bottom {
+                display: flex;
+                flex-direction: row;
+                align-content: flex-end;
+            }
+
+            .s_readComment_walking_img {
+                width: 80px;
+                height: 80px;
+                margin: 0 20px;
+            }
+
+            .s_readComment_walking_img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .s_readComment_walking_time {
+                font-size: 16px;
+                margin: 50px 0 0 280px;
+            }
+        }
+
+
+        /* * {
+            outline: 1px orange solid;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="s_writeComment_order">
+        <svg class=" s_writeComment_walking_closeWindow" data-dismiss="modal" aria-label="Close">
+            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
+            </use>
+        </svg>
+        <div class="s_writeComment_walking_title">
+            <p>訂單評價</p>
+        </div>
+        <div class="s_writeComment_order_orderDetail">
+            <p class="">訂單編號 : 202101281850253</p>
+            <!-- <div class="s_writeComment_walking_detail">
+                <div class="s_writeComment_walking_order_detail_img"><img src="./walkingDog.png" alt="">
+                </div>
+                <div class="s_writeComment_walking_order_detail_name">遛狗服務</div>
+
+                <div class="s_writeComment_walking_detail_grid">
+                    <div class="s_writeComment_walking_date">日期</div>
+                    <div class="s_writeComment_walking_date_return">2021/05/18</div>
+                    <div class="s_writeComment_walking_plan">選購方案</div>
+                    <div class="s_writeComment_walking_plan_return">方案二(一小時)</div>
+                    <div class="s_writeComment_walking_time">時間</div>
+                    <div class="s_writeComment_walking_time_return">18:30</div>
+                    <div class="s_writeComment_walking_servicer">代遛人員</div>
+                    <div class="s_writeComment_walking_servicer_return">于誠</div>
+                </div>
+                <div class="s_writeComment_walking_order_detail_price">NT$3,000</div>
+
+            </div> -->
+
+
+        </div>
+        <div class="s_readComment_walking_commentArea">
+            <div class="s_readComment_walking_member">
+                <div class="s_readComment_walking_memberPhoto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="68" height="69" viewBox="0 0 68 69">
+                        <g id="svg-01" transform="translate(-0.333 0.48)">
+                            <ellipse id="Oval-Copy-3" cx="34" cy="34.5" rx="34" ry="34.5"
+                                transform="translate(0.333 -0.48)" fill="#c3c3c3" opacity="0.2" />
+                            <g id="Group-5-Copy-2" transform="translate(17.516 15.963)">
+                                <path id="Stroke-1"
+                                    d="M21.506,8.253A8.253,8.253,0,1,1,13.253,0,8.253,8.253,0,0,1,21.506,8.253Z"
+                                    transform="translate(3.253)" fill="none" stroke="#f9dd83" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" fill-rule="evenodd" />
+                                <path id="Stroke-3"
+                                    d="M31.751,26.205H1.261A1.222,1.222,0,0,1,0,25.033C0,18.415,5.83,13,12.956,13h7.1c7.126,0,12.956,5.415,12.956,12.033A1.223,1.223,0,0,1,31.751,26.205Z"
+                                    transform="translate(0 8.458)" fill="none" stroke="#f9dd83" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" fill-rule="evenodd" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="s_readComment_walking_member_detail">
+                    <p class="s_readComment_walking_memberName">一尾</p>
+                    <div class="s_readComment_walking_star">
+                        <svg class="s_readComment_walking_star_icon">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                        </svg>
+                        <svg class="s_readComment_walking_star_icon">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                        </svg>
+                        <svg class="s_readComment_walking_star_icon">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                        </svg>
+                        <svg class="s_readComment_walking_star_icon">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                        </svg>
+                        <svg class="s_readComment_walking_star_icon">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <p class="s_readComment_walking_content">第三次請Evonne幫忙了～ 狗狗看起來都蠻開心的</p>
+            <div class="s_readComment_walking_comment_bottom">
+                <div class="s_readComment_walking_img">
+                    <img src="./walkingDog.png" alt="">
+                </div>
+                <div class="s_readComment_walking_time">
+                    <p>2021-01-24 22:45</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+    <script src="./js/index/index.js"></script>
+
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
