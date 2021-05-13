@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Document</title>
+    <style>
+.dropdown{
+    width:180px ;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    color: #707070;
+    border: 2px solid #ccc;
+}
+.input-group-append button {
+    color: #707070;
+    font-size: 16px;
+    /* background-color: #fff; */
+    border: none;
+    position: relative;
+    left: -40px;
+}
+
+
+.dropdown-item{
+   color: #707070;
+   font-size: 16px;
+}
+::placeholder
+{ 
+    color: #ccc;
+
+ }
+    </style>
+</head>
+<body>
+    <div class="dropdown ">
+        <button class="btn dropdown-toggle s_array" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            排序依據
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item s_date" href="#">加入日期由新到舊</a>
+            <a class="dropdown-item s_hot" href="#">熱門程度優先</a>
+            <a class="dropdown-item s_high_price" href="#">價格由高至低</a>
+            <a class="dropdown-item s_low_price" href="#">價格由低至高</a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+    <script src="./js/index/index.js"></script>
+    
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+<script>
+    $('.s_date').click(function () {
+
+            let hotelName = $(this).html();
+
+            $('.s_array').html(hotelName);
+        });
+        $('.s_hot').click(function () {
+
+            let hotelName = $(this).html();
+
+            $('.s_array').html(hotelName);
+        });
+        $('.s_high_price').click(function () {
+
+            let hotelName = $(this).html();
+
+            $('.s_array').html(hotelName);
+        });
+        $('.s_low_price').click(function () {
+
+            let hotelName = $(this).html();
+
+            $('.s_array').html(hotelName);
+        });
+</script>
+</html>

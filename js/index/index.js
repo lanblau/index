@@ -1,21 +1,4 @@
-// let navTop = $('.nav').offset().top;
 
-
-// $(window).scroll(function () {
-
-//     let scrollTop = $(this).scrollTop();
-//     console.log('navTop', navTop);
-//     console.log('scrollTop', scrollTop);
-
-//     if (scrollTop >= navTop) {
-//         // nav fixed 
-//         $('.nav').addClass('s_fixed');
-//     }
-//     else {
-//         // nav unfixed 
-//         $('.nav').removeClass('s_fixed');
-//     }
-// })
 
 //--------影片控制----------
 // function onYouTubeIframeAPIReady() {
@@ -47,8 +30,6 @@
 
 //-------------每月主打carousel------------
 // 宣告一個變數來儲存現在的頁數
-// 作用域 Scope 全域變數
-// 初始值為零
 let page = 0;
 
 $('.s_slider-dots li').hover(
@@ -56,11 +37,6 @@ $('.s_slider-dots li').hover(
         // page=('.s_slider-dots li').hover的第幾項
         page = $(this).index();
 
-        // console.log('hi', $(this));
-        // .index()取得目前符合條件的選擇器是第幾個
-        // console.log($(this).index());
-
-        // ('.s_slider-dots li').hover後,.siblings()其他物件回復原本顏色
         $(this).css('background-color', 'var(--mainblue)').css('color', '#ffffff').siblings().css('color', 'var(--maindarkgray)').css('background-color', 'var(--mainyellow)');
         // $(this).find('.s_index_choice_PC_icon').css('fill', '#ffffff');
         // $(this).siblings().find('.s_index_choice_PC_icon').css('fill', 'var(--maindarkgray)');
@@ -68,11 +44,10 @@ $('.s_slider-dots li').hover(
 
         // $(this) 代名詞 = 被 hover 的 li=('.s_slider-dots li').hover這個狀態function
 
-        // 'px'是字串, $(this).index()是hover到第幾項
+
         $('.s_img-wrap').css('left', $(this).index() * -1500 + 'px');
     })
-// js es6 的 Function 寫法, 俗稱箭頭函式  setInterval(() => {}, interval);
-// 每三秒 page = page + 1
+
 setInterval(() => {
     page = page + 1;
 
@@ -94,7 +69,7 @@ setInterval(() => {
 // --------------狗狗食物動畫---------------
 
 $(window).scroll(function () {
-    console.log('scollTop', $(this).scrollTop());
+    // console.log('scollTop', $(this).scrollTop());
 
     let windowScrollTop = $(this).scrollTop();
 
@@ -322,7 +297,7 @@ $(".s_donationCount_part").mouseleave(function () {
 //-----------捐贈計數跑數字--------------
 
 $(window).scroll(function () {
-    console.log('scollTop', $(this).scrollTop());
+    // console.log('scollTop', $(this).scrollTop());
 
     let windowScrollTop = $(this).scrollTop();
 
@@ -429,31 +404,3 @@ $(window).scroll(function () {
 
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // $(function () {
-  //   var len = 30; // 超過50個字以"..."取代
-  //   $(".s_index_column_index_dog_para").each(function (i) {
-  //     if ($(this).text().length > len) {
-  //       $(this).attr("title", $(this).text());
-  //       var text = $(this).text().substring(0, len - 1) + "...";
-  //       $(this).text(text);
-  //     }
-  //   });
-  // });

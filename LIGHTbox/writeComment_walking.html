@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>writeComment</title>
+
+    <style>
+        body {
+            background-color: #70707063;
+        }
+
+        .s_writeComment_walking {
+            background-color: #F7F4EE;
+            width: 700px;
+            height: 700px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .s_writeComment_walking_closeWindow {
+            width: 25px;
+            height: 25px;
+            fill: var(--mainyellow);
+            margin: 40px 60px 20px 610px;
+        }
+
+        .s_writeComment_walking_closeWindow:hover {
+            fill: var(--mainblue);
+
+        }
+
+        .s_writeComment_walking_title {
+            /* text-align: center; */
+            margin: 10px 0 0 50px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .s_writeComment_walking_orderDetail {
+            width: 600px;
+            height: 150px;
+            background-color: var(--mainyellow);
+            border-radius: 20px;
+            margin: 10px auto;
+            padding: 25px;
+            font-size: 16px;
+        }
+
+
+        .s_writeComment_walking_order_detail_img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .s_writeComment_walking_order_detail_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .s_writeComment_walking_detail {
+            display: grid;
+            width: 550px;
+            grid-template-columns: 100px 70px 325px 1fr;
+            Grid-template-rows: 100px;
+            /* margin: 0px auto; */
+        }
+
+        .s_writeComment_walking_detail_grid {
+            display: grid;
+            grid-template-columns: 40px 100px 75px 115px;
+            Grid-template-rows: 50px 50px;
+            /* margin-top: 10px; */
+        }
+
+        /* .s_writeComment_walking_detail_grid .s_writeComment_walking_plan {
+            padding: 0 0;
+        } */
+
+        .s_writeComment_walking_order_detail_price {
+            line-height: 100px;
+
+        }
+
+        .s_writeComment_walking_order_detail_name {
+            margin-top: 35px;
+            text-align: center;
+            /* vertical-align: middle; */
+        }
+
+        .s_writeComment_walking_subtiitle {
+            font-size: 18px;
+            margin: 10px 0 0 50px;
+        }
+
+        .s_writeComment_walking_starArea {
+
+            margin: 10px 0 0 50px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+        .s_writeComment_walking_starword {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .s_writeComment_walking_star {
+            margin: 0 0 0 10px;
+        }
+
+        .s_writeComment_walking_star_icon {
+            max-width: 30px;
+            height: 30px;
+            fill: var(--mainyellow);
+
+        }
+
+
+        * {
+            outline: 1px orange solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="s_writeComment_walking">
+        <svg class=" s_writeComment_walking_closeWindow" data-dismiss="modal" aria-label="Close">
+            <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-metro-cross">
+            </use>
+        </svg>
+        <div class="s_writeComment_walking_title">
+            <p>填寫評價</p>
+        </div>
+        <div class="s_writeComment_walking_orderDetail">
+            <div class="s_writeComment_walking_detail">
+                <div class="s_writeComment_walking_order_detail_img"><img src="./walkingDog.png" alt="">
+                </div>
+                <div class="s_writeComment_walking_order_detail_name">遛狗服務</div>
+
+                <div class="s_writeComment_walking_detail_grid">
+                    <div class="s_writeComment_walking_date">日期</div>
+                    <div class="s_writeComment_walking_date_return">2021/05/18</div>
+                    <div class="s_writeComment_walking_plan">選購方案</div>
+                    <div class="s_writeComment_walking_plan_return">方案二(一小時)</div>
+                    <div class="s_writeComment_walking_time">時間</div>
+                    <div class="s_writeComment_walking_time_return">18:30</div>
+                    <div class="s_writeComment_walking_servicer">代遛人員</div>
+                    <div class="s_writeComment_walking_servicer_return">于誠</div>
+                </div>
+                <div class="s_writeComment_walking_order_detail_price">NT$3,000</div>
+
+            </div>
+
+
+        </div>
+        <div class="s_writeComment_walking_subtiitle">對於此服務
+        </div>
+        <div class="s_writeComment_walking_starArea">
+            <p class="s_writeComment_walking_starword">好評星等</p>
+
+            <div class="s_writeComment_walking_star">
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+                <svg class="s_writeComment_walking_star_icon">
+                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                </svg>
+            </div>
+        </div>
+
+        <!-- <div class="s_writeComment_walking_submitBtn_area">
+        <a href="">
+            <button class="s_writeComment_walking_submitBtn" type="button">加入購物車</button>           
+        </a>
+    </div> -->
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+    <script src="./js/index/index.js"></script>
+
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

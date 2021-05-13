@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --mainblue: #89A7C2;
+            --mainpink: #FF9A9A;
+            --mainyellow: #F9DD83;
+            --maingray: #CCCCCC;
+            --maindarkgray: #707070;
+
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+            background-color: #F7F4EE;
+            /* margin: 0 auto; */
+            width: 100%;
+            font-weight: 200;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: unset;
+
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        /* ----------------------------- */
+        @media (min-width:300px) {
+
+            /* .s_writeComment_walking_order_detail {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 40px auto;
+                width: 90%;
+            } */
+            .s_writeComment_walking_order_detail_img {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .s_writeComment_walking_detail {
+
+                /* border: 1px solid red; */
+                display: flex;
+                width: 90%;
+                flex-wrap: wrap;
+                margin: 10px auto;
+
+            }
+
+            .s_writeComment_walking_detail_grid {
+
+                display: grid;
+                grid-template-columns: 90px 120px;
+                Grid-template-rows: 20px 20px 20px 20px 20px;
+                margin-top: 10px;
+                position: relative;
+                top: -83px;
+                left: 110px;
+            }
+/* *{
+    outline: 1px orange solid;
+} */
+            .s_writeComment_walking_order_detail_name {
+                width: 60%;
+                margin-left: 10px;
+
+            }
+
+            .s_writeComment_walking_order_detail_price {
+                /* width: 100%;
+                margin-top: 10px;
+                text-align: center; */
+                display: none;
+            }
+
+            /* .s_writeComment_walking_detail_grid .l_plan {
+                padding: 0 0;
+            } */
+
+
+
+            /* .s_writeComment_walking_order_detail_grid {
+                width: 100%;
+               
+                display: grid;
+                grid-template-columns: 100px 100px;
+                Grid-template-rows: 23px 23px;
+                margin-top: -25px;
+                padding-left: 70px;
+
+
+            } */
+            /* 
+            .s_writeComment_walking_size,
+            .s_writeComment_walking_plan {
+                padding-left: 30px;
+            } */
+
+
+
+
+            /* .s_writeComment_walking_date {
+                
+                width: 130px;
+                height: 23px;
+
+            } */
+
+
+
+        }
+
+        @media (min-width: 500px) {
+            .s_writeComment_walking_order_detail_img {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .s_writeComment_walking_detail {
+                display: grid;
+                width: 850px;
+                grid-template-columns: 120px 100px 520px 1fr;
+                Grid-template-rows: 100px;
+                margin: 40px auto;
+            }
+
+            .s_writeComment_walking_detail_grid {
+                display: grid;
+                grid-template-columns: 50px 150px 100px 150px;
+                Grid-template-rows: 50px 50px;
+                margin-top: 10px;
+            }
+
+            /* .s_writeComment_walking_detail_grid .s_writeComment_walking_plan {
+                padding: 0 0;
+            } */
+
+            .s_writeComment_walking_order_detail_price {
+                line-height: 100px;
+
+            }
+
+            .s_writeComment_walking_order_detail_name {
+                margin-top: 35px;
+            }
+
+            /* .s_writeComment_walking_service_order .s_writeComment_walking_price_line {
+            top: -60px;
+        } */
+
+            /* .s_writeComment_walking_service_order .s_writeComment_walking_price_grid {
+            font-size: 18px;
+           
+            width: 300px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            Grid-template-rows: 40px 50px 50px;
+        } */
+
+
+
+            /* .s_writeComment_walking_order_detail {
+
+            display: grid;
+            width: 850px;
+            grid-template-columns: 120px 320px 300px 1fr;
+            Grid-template-rows: 100px;
+            margin: 40px auto;
+        } */
+
+
+
+
+            /* .s_writeComment_walking_order_detail_grid {
+           
+            display: grid;
+            grid-template-columns: 130px 100px;
+            Grid-template-rows: 50px 50px;
+            margin-top: 10px;
+
+        } */
+
+            /* .s_writeComment_walking_size,
+        .s_writeComment_walking_plan {
+            padding-left: 30px;
+        } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="s_writeComment_walking_detail">
+        <div class="s_writeComment_walking_order_detail_img"><img src="./images/Account/l_order_detail_img.jpg" alt="">
+        </div>
+        <div class="s_writeComment_walking_order_detail_name">遛狗服務</div>
+
+        <div class="s_writeComment_walking_detail_grid">
+            <div class="s_writeComment_walking_date">日期</div>
+            <div class="s_writeComment_walking_date_return">2021/05/18</div>
+            <div class="s_writeComment_walking_plan">選購方案</div>
+            <div class="s_writeComment_walking_plan_return">方案二(一小時)</div>
+            <div class="s_writeComment_walking_time">時間</div>
+            <div class="s_writeComment_walking_time_return">18:30</div>
+            <div class="s_writeComment_walking_servicer">代遛人員</div>
+            <div class="s_writeComment_walking_servicer_return">于誠</div>
+        </div>
+        <div class="s_writeComment_walking_order_detail_price">NT$3,000</div>
+
+    </div>
+
+</body>
+
+</html>
