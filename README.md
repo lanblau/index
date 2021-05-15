@@ -3,4 +3,4 @@
 
 [購物車光箱](https://lanblau.github.io/index/addToCart_lightbox.html)
 
-[取消訂單光箱](https://lanblau.github.io/index/CancelOrder.html)
+[光箱](https://lanblau.github.io/index/modal.html)
